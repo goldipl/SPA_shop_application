@@ -4,7 +4,6 @@
     "description": "",
     "main": "it-spa.js",
     "scripts": {
-        "predeploy": "npm run build",
         "start:db": "json-server --watch database.json",
         "start:app": "parcel ./index.html --open"
     },
