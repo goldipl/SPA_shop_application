@@ -4,7 +4,6 @@
     "description": "",
     "main": "it-spa.js",
     "scripts": {
-        "install": "npm install",
         "start:db": "json-server --watch database.json",
         "start:app": "parcel ./index.html --open"
     },
