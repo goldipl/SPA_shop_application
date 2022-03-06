@@ -4,6 +4,7 @@
     "description": "",
     "main": "it-spa.js",
     "scripts": {
+        "build": "parcel build ./index.html",
         "start:db": "json-server --watch database.json",
         "start:app": "parcel ./index.html --open"
     },
