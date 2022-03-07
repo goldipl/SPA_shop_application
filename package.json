@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "start:db": "json-server --watch database.json",
+        "start:db": "json-server --watch db.json",
         "build": "parcel build ./index.html",
         "start:app": "parcel ./index.html --open"
     },
