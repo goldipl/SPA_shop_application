@@ -6,7 +6,7 @@ export function Treatment(treatment) {
 
     article.style.margin = '0.5em 0';
     article.style.padding = '1em 2em';
-    article.style.backgroundColor = 'white';
+    article.style.backgroundColor = 'rgb(13 110 253 / 10%)';
 
     article.innerHTML = `
     <h4>${name}</h4>
