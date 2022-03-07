@@ -10,7 +10,7 @@ export function Treatments() {
   `;
 
 
-    fetch('http://localhost:3000/treatments')
+    fetch('https://my-json-server.typicode.com/goldipl/SPA_shop_application/treatments')
         .then(response => response.json())
         .then(treatments => {
             const articles = treatments.map(treatment => Treatment(treatment));

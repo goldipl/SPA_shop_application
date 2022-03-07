@@ -8,7 +8,7 @@ export function Rooms() {
         <p id="loading">Loading...</p>
     `;
 
-    fetch('http://localhost:3000/rooms')
+    fetch('https://my-json-server.typicode.com/goldipl/SPA_shop_application/rooms')
         .then(response => response.json())
         .then(rooms => {
             const ul = document.createElement('ul');

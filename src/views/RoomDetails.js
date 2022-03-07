@@ -3,12 +3,12 @@ import { Rooms } from './Rooms';
 
 export function RoomDetails(id) {
     const section = document.createElement('section');
-    
+
     section.innerHTML = `
         <p id="loading">Loading...</p>
     `;
 
-    fetch(`http://localhost:3000/rooms/${id}`)
+    fetch(`https://my-json-server.typicode.com/goldipl/SPA_shop_application/rooms/${id}`)
         .then(response => response.json())
         .then(room => {
             const { name, beds, guests, price, description } = room;
