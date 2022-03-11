@@ -22,15 +22,19 @@ function SeeMoreButton(id) {
 
 export function Room(room) {
     const { id, name, price } = room;
-    const li = document.createElement('li');
+    const article = document.createElement('article');
 
-    li.innerHTML = `
+    article.style.margin = '0.5em 0';
+    article.style.padding = '1em 2em';
+    article.style.backgroundColor = 'rgb(13 110 253 / 10%)';
+
+    article.innerHTML = `
         <h4>${name}</h4>
         <p>Price: ${price} USD</p>
     `;
 
-    li.append(AddToCartButton(room));
-    li.append(SeeMoreButton(id));
+    article.append(AddToCartButton(room));
+    article.append(SeeMoreButton(id));
 
-    return li;
+    return article;
 }
