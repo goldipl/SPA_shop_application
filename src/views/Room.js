@@ -1,5 +1,6 @@
 import { RoomDetails } from './RoomDetails';
 import { AddToCartButton } from '../common/AddToCartButton';
+import "./room.scss"
 
 function SeeMoreButton(id) {
     const button = document.createElement('button');
@@ -23,10 +24,7 @@ function SeeMoreButton(id) {
 export function Room(room) {
     const { id, name, price } = room;
     const article = document.createElement('article');
-
-    article.style.margin = '0.5em 0';
-    article.style.padding = '1em 2em';
-    article.style.backgroundColor = 'rgb(13 110 253 / 10%)';
+    article.className = 'roomArticle';
 
     article.innerHTML = `
         <h4>${name}</h4>
