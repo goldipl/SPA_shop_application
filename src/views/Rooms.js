@@ -3,6 +3,19 @@ import { Room } from "./Room";
 export function Rooms() {
     const section = document.createElement('section');
 
+    // ----- My own routing ----- start
+    console.log('Rooms subpage');
+
+    const urlPath = () => {
+        let currentURL = window.location.href + 'Rooms';
+        window.history.pushState({ path: currentURL }, '', currentURL);
+        console.log(currentURL);  
+    }
+
+    urlPath();
+
+    // ----- My own routing ----- end
+
     section.innerHTML = `
         <h2>Rooms</h2>
         <p id="loading">Loading...</p>
@@ -20,6 +33,6 @@ export function Rooms() {
             section.querySelector('#loading').remove();
             section.append(div);
         });
-
+        console.log('Rooms subpage');
     return section;
 }

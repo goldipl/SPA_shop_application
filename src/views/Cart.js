@@ -4,7 +4,22 @@ import {RemoveFromCartButton} from '../common/RemoveFromCartButton';
 const add = (a, b) => a + b;
 const calculateTotal = (items) => items.map(item => item.price).reduce(add, 0).toFixed(2);
 
+
 export function Cart() {
+
+    // ----- My own routing ----- start
+    console.log('Cart subpage');
+
+    const urlPath = () => {
+        let currentURL = window.location.href + 'Cart';
+        window.history.pushState({ path: currentURL }, '', currentURL);
+        console.log(currentURL);  
+    }
+
+    urlPath();
+
+    // ----- My own routing ----- end
+
     const section = document.createElement('section');
 
     section.innerHTML = `
