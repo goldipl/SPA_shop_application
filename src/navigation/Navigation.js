@@ -2,6 +2,7 @@ import { Rooms } from '../views/Rooms';
 import { Treatments } from '../views/Treatments';
 import { Cart } from '../views/Cart';
 import { NavigationButton } from './NavigationButton';
+import { LoginSignup } from '../views/LoginSignup';
 import './navigation.scss';
 
 
@@ -10,7 +11,8 @@ const navigationItems = [
     //      jaki widok, tekst na guziku
     { component: Rooms, name: 'Rooms' },
     { component: Treatments, name: 'Treatments' },
-    { component: Cart, name: '🛒' }
+    { component: Cart, name: '🛒' },
+    { component: LoginSignup, name: 'Log in / Sign up' }
 ];
 
 
