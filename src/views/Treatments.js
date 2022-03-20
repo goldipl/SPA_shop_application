@@ -1,4 +1,4 @@
-import { Treatment } from "./Treatment";
+import {Treatment} from "./Treatment";
 
 export function Treatments() {
 
@@ -8,9 +8,9 @@ export function Treatments() {
     console.log('Treatments subpage');
 
     const urlPath = () => {
-        let currentURL = window.location.href + 'Treatments';
-        window.history.pushState({ path: currentURL }, '', currentURL);
-        console.log(currentURL);  
+        let currentURL = window.location.href;
+
+        window.history.replaceState({}, currentURL, "/" + "Treatments");
     }
 
     urlPath();
@@ -31,7 +31,7 @@ export function Treatments() {
             section.querySelector('#loading').remove();
             section.append(...articles);
         });
-        console.log('Treatments subpage');
+    console.log('Treatments subpage');
 
     return section;
 
