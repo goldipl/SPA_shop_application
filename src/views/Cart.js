@@ -10,7 +10,8 @@ export function Cart() {
 
     // ----- My own routing ----- start
     console.log('Cart subpage');
-
+    const endpoint = 'Cart';
+    
     Router(endpoint);
     // ----- My own routing ----- end
 

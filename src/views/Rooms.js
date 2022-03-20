@@ -6,6 +6,7 @@ export function Rooms() {
 
     // ----- My own routing ----- start
     console.log('Rooms subpage');
+    const endpoint = 'Rooms';
 
     Router(endpoint);
     // ----- My own routing ----- end

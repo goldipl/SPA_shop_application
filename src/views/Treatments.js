@@ -7,6 +7,7 @@ export function Treatments() {
 
     // ----- My own routing ----- start
     console.log('Treatments subpage');
+    const endpoint = 'Treatments';
 
     Router(endpoint);
     // ----- My own routing ----- end
