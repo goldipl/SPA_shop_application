@@ -1,4 +1,5 @@
 import {Room} from "./Room";
+import {Router} from "./../router/Router";
 
 export function Rooms() {
     const section = document.createElement('section');
@@ -6,16 +7,7 @@ export function Rooms() {
     // ----- My own routing ----- start
     console.log('Rooms subpage');
 
-
-    const urlPath = () => {
-        let currentURL = window.location.href;
-
-        window.history.replaceState({}, currentURL, "/" + "Rooms");
-    }
-   
-    urlPath();
-
-
+    Router(endpoint);
     // ----- My own routing ----- end
 
     section.innerHTML = `

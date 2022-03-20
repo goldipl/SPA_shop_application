@@ -1,9 +1,6 @@
-import {
-    cartManager
-} from '../cart/CartManager';
-import {
-    RemoveFromCartButton
-} from '../common/RemoveFromCartButton';
+import {cartManager} from '../cart/CartManager';
+import {RemoveFromCartButton} from '../common/RemoveFromCartButton';
+import {Router} from "./../router/Router";
 
 const add = (a, b) => a + b;
 const calculateTotal = (items) => items.map(item => item.price).reduce(add, 0).toFixed(2);
@@ -14,14 +11,7 @@ export function Cart() {
     // ----- My own routing ----- start
     console.log('Cart subpage');
 
-    const urlPath = () => {
-        let currentURL = window.location.href;
-
-        window.history.replaceState({}, currentURL, "/" + "Cart");
-    }
-
-    urlPath();
-
+    Router(endpoint);
     // ----- My own routing ----- end
 
     const section = document.createElement('section');

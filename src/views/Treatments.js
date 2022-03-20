@@ -1,4 +1,5 @@
 import {Treatment} from "./Treatment";
+import {Router} from "./../router/Router";
 
 export function Treatments() {
 
@@ -7,14 +8,7 @@ export function Treatments() {
     // ----- My own routing ----- start
     console.log('Treatments subpage');
 
-    const urlPath = () => {
-        let currentURL = window.location.href;
-
-        window.history.replaceState({}, currentURL, "/" + "Treatments");
-    }
-
-    urlPath();
-
+    Router(endpoint);
     // ----- My own routing ----- end
 
     section.innerHTML = `
