@@ -44,7 +44,7 @@ export function LoginSignup() {
 
     // ----- My own routing ----- start
     console.log('Login subpage');
-    const endpoint = 'Login';
+    const endpoint = 'LoginSignUp';
 
     Router(endpoint);
     // ----- My own routing ----- end
