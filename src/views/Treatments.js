@@ -26,8 +26,6 @@ export function Treatments() {
             section.querySelector('#loading').remove();
             section.append(...articles);
         });
-    console.log('Treatments subpage');
 
     return section;
-
 }

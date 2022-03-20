@@ -28,6 +28,6 @@ export function Rooms() {
             section.querySelector('#loading').remove();
             section.append(div);
         });
-    console.log('Rooms subpage');
+ 
     return section;
 }
