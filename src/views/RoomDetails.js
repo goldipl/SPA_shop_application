@@ -7,8 +7,10 @@ export function RoomDetails(id) {
     section.innerHTML = `
         <p id="loading">Loading...</p>
     `;
-
-    fetch(`https://my-json-server.typicode.com/goldipl/SPA_shop_application/rooms/${id}`)
+    // Local version
+    fetch('https://localhost:3000/rooms/${id}')
+    // Live - Github Version
+    // fetch(`https://my-json-server.typicode.com/goldipl/SPA_shop_application/rooms/${id}`)
         .then(response => response.json())
         .then(room => {
             const { name, beds, guests, price, description } = room;

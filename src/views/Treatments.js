@@ -17,8 +17,10 @@ export function Treatments() {
       <p id="loading">Loading...</p>
   `;
 
-
-    fetch('https://my-json-server.typicode.com/goldipl/SPA_shop_application/treatments')
+    // Live - Github Version
+    // fetch('https://my-json-server.typicode.com/goldipl/SPA_shop_application/treatments')
+    // Local version
+    fetch('https://localhost:3000/treatments')
         .then(response => response.json())
         .then(treatments => {
             const articles = treatments.map(treatment => Treatment(treatment));
