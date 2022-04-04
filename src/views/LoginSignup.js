@@ -1,12 +1,12 @@
 import {Router} from "../router/Router";
 
 function SignUpButton() {
-    const button = document.createElement('button');
-    button.setAttribute('type', 'button');
-    button.innerText = 'Sign Up';
-    button.classList.add('btn', 'btn-success');
-    button.style.marginBottom = '1em';
-    button.style.marginLeft = '1em';
+    const button01 = document.createElement('button');
+    button01.setAttribute('type', 'button');
+    button01.innerText = 'Sign Up';
+    button01.classList.add('btn', 'btn-success');
+    button01.style.marginBottom = '1em';
+    button01.style.marginLeft = '1em';
 
     const navigateEvent = new CustomEvent('navigate', {
         //To Do
@@ -16,25 +16,25 @@ function SignUpButton() {
         document.body.dispatchEvent(navigateEvent);
     });
 
-    return button;
+    return button01;
 }
 
 function LogInButton() {
-    const button = document.createElement('button');
-    button.setAttribute('type', 'button');
-    button.innerText = 'Log In';
-    button.classList.add('btn', 'btn-primary');
-    button.style.marginBottom = '1em';
+    const button02 = document.createElement('button');
+    button02.setAttribute('type', 'button');
+    button02.innerText = 'Log In';
+    button02.classList.add('btn', 'btn-primary');
+    button02.style.marginBottom = '1em';
 
     const navigateEvent = new CustomEvent('navigate', {
         //To Do
     });
 
-    button.addEventListener('click', () => {
+    button02.addEventListener('click', () => {
         document.body.dispatchEvent(navigateEvent);
     });
 
-    return button;
+    return button02;
 }
 
 
