@@ -10,10 +10,16 @@ function SignUpButton() {
 
     const navigateEvent = new CustomEvent('navigate', {
         //To Do
+
     });
 
     button01.addEventListener('click', () => {
-        document.body.dispatchEvent(navigateEvent);
+        //document.body.dispatchEvent(navigateEvent);
+        const loginText = document.getElementById('textInput').value;
+        const passText = document.getElementById('passInput').value;
+        console.log(loginText);
+        console.log(passText);
+
     });
 
     return button01;
@@ -31,7 +37,11 @@ function LogInButton() {
     });
 
     button02.addEventListener('click', () => {
-        document.body.dispatchEvent(navigateEvent);
+        //document.body.dispatchEvent(navigateEvent);
+        const loginText = document.getElementById('textInput').value;
+        const passText = document.getElementById('passInput').value;
+        console.log(loginText);
+        console.log(passText);
     });
 
     return button02;
