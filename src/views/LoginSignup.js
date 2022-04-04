@@ -12,7 +12,7 @@ function SignUpButton() {
         //To Do
     });
 
-    button.addEventListener('click', () => {
+    button01.addEventListener('click', () => {
         document.body.dispatchEvent(navigateEvent);
     });
 
