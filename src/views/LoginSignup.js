@@ -52,6 +52,12 @@ export function LoginSignup() {
     section.innerHTML = `
       <h2>Log in / Sign up</h2>
       <br>
+      <label for="textInput">Login</label>
+      <input id="textInput" style="margin-bottom: 8px;">
+      <br>
+      <label for="passInput">Password</label>
+      <input id="passInput" type="password" style="margin-bottom: 8px;">
+      <br>
     `;
 
     section.append(LogInButton());
