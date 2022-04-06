@@ -1,8 +1,13 @@
-body {
-    padding: 2rem;
+body {   
     background-color: #FFFFFF;
-    h2 {
-        padding-bottom: 8px;
-        text-decoration: underline;
+    main {
+    padding: 0 2em 2em 2em;
+        h2 {
+            padding-bottom: 8px;
+            text-decoration: underline;
+        }
+    }
+    p.text-muted {
+        padding: 0 2em;
     }
 }
