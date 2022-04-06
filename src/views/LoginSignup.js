@@ -60,14 +60,13 @@ export function LoginSignup() {
     // ----- My own routing ----- end
 
     section.innerHTML = `
-      <h2>Log in / Sign up</h2>
-      <br>
+    <h2>Log in / Sign up</h2>
+    <div style="display: flex; flex-direction: column; width: 240px;">
       <label for="textInput">Login</label>
       <input id="textInput" style="margin-bottom: 8px;">
-      <br>
       <label for="passInput">Password</label>
       <input id="passInput" type="password" style="margin-bottom: 8px;">
-      <br>
+    <div>
     `;
 
     section.append(LogInButton());
