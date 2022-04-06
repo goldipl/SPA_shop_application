@@ -13,7 +13,7 @@ export function Calculate() {
     // ----- My own routing ----- end
 
     section.innerHTML = `
-    <h2>Calculate</h2>
+    <h2>Calculator</h2>
     <div class="calcView">
         <input type="text" readonly="" class="calcDisplay">
         <div class="calcKeysCol1">
@@ -39,10 +39,117 @@ export function Calculate() {
         </div>
         <div class="calcKeysCol4">
             <button class="btnn dv" data-action="divide">÷</button>
-            <button class="btnEqual" data-action="equal">=</button>
+            <button class="btnnEqual" data-action="equal">=</button>
         </div>
     </div>
     `;
 
+    const script =
+    `<script>
+    const btnnNr1 = document.querySelector(".nr1");
+    const btnnNr2 = document.querySelector(".nr2");
+    const btnnNr3 = document.querySelector(".nr3");
+    const btnnNr4 = document.querySelector(".nr4");
+    const btnnNr5 = document.querySelector(".nr5");
+    const btnnNr6 = document.querySelector(".nr6");
+    const btnnNr7 = document.querySelector(".nr7");
+    const btnnNr8 = document.querySelector(".nr8");
+    const btnnNr9 = document.querySelector(".nr9");
+    const btnnNr0 = document.querySelector(".nr0");
+    const btnnNumbers = [btnnNr1, btnnNr2, btnnNr3, btnnNr4, btnnNr5, btnnNr6, btnnNr7, btnnNr8, btnnNr9, btnnNr0];
+    const btnnAC = document.querySelector(".btnn.ac");
+    const btnnDot = document.querySelector(".btnn.dot");
+    const calcDisplay = document.querySelector("input");
+    const btnnAdd = document.querySelector(".btnn.add");
+    const btnnSub = document.querySelector(".btnn.sub");
+    const btnnDiv = document.querySelector(".btnn.dv");
+    const btnnMlt = document.querySelector(".btnn.mlt");
+    const btnnEq = document.querySelector(".btnnEqual");
+    let value1 = '';
+    let value2 = '';
+    let result = '';
+    let operator = '';
+    
+    //getting number to display
+    btnnNumbers.forEach(button => {
+        button.addEventListener("click", () => {
+            btnnNumber = button.dataset.num;
+            calcDisplay.value += btnnNumber;
+        });
+    });
+    
+    //AC Button
+    btnnAC.addEventListener("click", () => {
+        calcDisplay.value = '';
+    });
+    
+    //dot Button
+    btnnDot.addEventListener("click", () => {
+        if (!calcDisplay.value.includes('.')) {
+            dotValue = '.';
+            calcDisplay.value += dotValue;
+        } else {
+            return;
+        }
+    });
+    
+    btnnAdd.addEventListener("click", () => {
+        operator = "add";
+        value1 = calcDisplay.value;
+        calcDisplay.value = '';
+    });
+    
+    btnnSub.addEventListener("click", () => {
+        operator = "sub";
+        value1 = calcDisplay.value;
+        calcDisplay.value = '';
+    });
+    
+    btnnDiv.addEventListener("click", () => {
+        operator = "div";
+        value1 = calcDisplay.value;
+        calcDisplay.value = '';
+    });
+    
+    btnnMlt.addEventListener("click", () => {
+        operator = "mlt";
+        value1 = calcDisplay.value;
+        calcDisplay.value = '';
+    });
+    
+    btnnEq.addEventListener("click", () => {
+        value2 = calcDisplay.value;
+        calculate();
+    });
+    
+    function calculate() {
+        switch (operator) {
+            case "add":
+                result = Number(value1) + Number(value2);
+                calcDisplay.value = result;
+                break;
+    
+            case "sub":
+                result = Number(value1) - Number(value2);
+                calcDisplay.value = result;
+                break;
+    
+            case "div":
+                result = Number(value1) / Number(value2);
+                calcDisplay.value = result;
+                break;
+    
+            case "mlt":
+                result = Number(value1) * Number(value2);
+                calcDisplay.value = result;
+                break;
+        }
+    }
+    </script>`;
+
+    const scriptCalc = document.createRange().createContextualFragment(script);
+    section.append(scriptCalc);
+
     return section;
+
 }
