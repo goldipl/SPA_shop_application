@@ -8,18 +8,28 @@ function SignUpButton() {
     button01.style.marginBottom = '1em';
     button01.style.marginLeft = '1em';
 
-    const navigateEvent = new CustomEvent('navigate', {
-        //To Do
-
-    });
+    // const navigateEvent = new CustomEvent('navigate', {
+    //     //To Do
+    // });
 
     button01.addEventListener('click', () => {
-        //document.body.dispatchEvent(navigateEvent);
-        const loginText = document.getElementById('textInput').value;
-        const passText = document.getElementById('passInput').value;
-        console.log(loginText);
-        console.log(passText);
+        // Require browserify-fs which includes writefile() function
+        const fs = require('browserify-fs')
 
+        // a simple object to write into the file
+        let user = {
+            name: document.getElementById('textInput').value,
+            password: document.getElementById('passInput').value,
+        };
+        
+        // Writing data into the 'db.json' file
+        fs.writeFile('./../../db.json', JSON.stringify(user), (err) => {
+            // error handling using throw
+            if (err) throw err;
+        })
+
+        console.log(user);
+        console.log(JSON.stringify(user));
     });
 
     return button01;
@@ -32,16 +42,28 @@ function LogInButton() {
     button02.classList.add('btn', 'btn-primary');
     button02.style.marginBottom = '1em';
 
-    const navigateEvent = new CustomEvent('navigate', {
-        //To Do
-    });
+    // const navigateEvent = new CustomEvent('navigate', {
+    //     //To Do
+    // });
 
     button02.addEventListener('click', () => {
-        //document.body.dispatchEvent(navigateEvent);
-        const loginText = document.getElementById('textInput').value;
-        const passText = document.getElementById('passInput').value;
-        console.log(loginText);
-        console.log(passText);
+        // Require browserify-fs which includes writefile() function
+        const fs = require('browserify-fs')
+
+        // a simple object to write into the file
+        let user = {
+            name: document.getElementById('textInput').value,
+            password: document.getElementById('passInput').value,
+        };
+        
+        // Writing data into the 'db.json' file
+        fs.writeFile('./../../db.json', JSON.stringify(user), (err) => {
+            // error handling using throw
+            if (err) throw err;
+        })
+
+        console.log(user);
+        console.log(JSON.stringify(user));
     });
 
     return button02;
