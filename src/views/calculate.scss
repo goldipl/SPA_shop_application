@@ -1,0 +1,54 @@
+.calcView {
+    display: block;
+    width: 240px;
+    z-index: 99;
+    border-left: none;
+}
+
+.calcDisplay {
+    width: 240px;
+    height: 60px;
+    font-size: 36px;
+    line-height: 60px;
+    text-align: right;
+    background-color: aquamarine;
+    border: 0;
+}
+
+.btnn,
+.btnnNr {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: azure;
+    border: none;
+    font-size: 24px;
+}
+
+.btnEqual {
+    display: block;
+    width: 60px;
+    height: 240px;
+    background-color: azure;
+    border: none;
+    font-size: 24px;
+}
+
+.calcKeysCol1,
+.calcKeysCol2,
+.calcKeysCol3,
+.calcKeysCol4 {
+    display: table-cell;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(13, 110, 253);
+}
+
+button:active {
+    transform: scale(1.05);
+}
