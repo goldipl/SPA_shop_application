@@ -70,6 +70,36 @@ function LogInButton() {
 }
 
 
+function showPasswordButton() {
+    const buttonShowPass = document.createElement('button');
+    buttonShowPass.setAttribute('type', 'button');
+    buttonShowPass.innerText = 'Show Password';
+    buttonShowPass.classList.add('btn', 'btn-warning');
+    buttonShowPass.style.marginBottom = '1em';
+    buttonShowPass.style.marginLeft = '1em';
+
+    buttonShowPass.addEventListener('click', () => {
+        document.getElementById('passInput').type = 'text';
+    });
+
+    return buttonShowPass;
+}
+
+function hidePasswordButton() {
+    const buttonHidePass = document.createElement('button');
+    buttonHidePass.setAttribute('type', 'button');
+    buttonHidePass.innerText = 'Hide Password';
+    buttonHidePass.classList.add('btn', 'btn-warning');
+    buttonHidePass.style.marginBottom = '1em';
+    buttonHidePass.style.marginLeft = '1em';
+
+    buttonHidePass.addEventListener('click', () => {
+        document.getElementById('passInput').type = 'password';
+    });
+
+    return buttonHidePass;
+}
+
 export function LoginSignup() {
 
     const section = document.createElement('section');
@@ -93,6 +123,8 @@ export function LoginSignup() {
 
     section.append(LogInButton());
     section.append(SignUpButton());
+    section.append(showPasswordButton());
+    section.append(hidePasswordButton());
 
     return section;
 }
