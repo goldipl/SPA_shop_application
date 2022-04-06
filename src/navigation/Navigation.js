@@ -14,7 +14,7 @@ const navigationItems = [
     { component: Treatments, name: 'Treatments 💊' },
     { component: Cart, name: 'Cart 🛒' },
     { component: LoginSignup, name: 'Log in / Sign up 🔒' },
-    { component: Calculate, name: 'Calculate Your Funds 💰' }
+    { component: Calculate, name: 'Calculate Your Funds 💰' },
 ];
 
 
