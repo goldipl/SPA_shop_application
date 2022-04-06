@@ -22,10 +22,6 @@ export function Navigation() {
 
     const nav = document.createElement('nav');
 
-    nav.style.backgroundColor = '#0d6efd';
-    nav.style.margin = '1em 0';
-
-
     const navigationButtons = navigationItems.map(item => {
         const { component, name } = item;
         //                     jaki widok, tekst na guziku
