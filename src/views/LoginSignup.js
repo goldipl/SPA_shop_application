@@ -3,18 +3,18 @@ import {showPasswordButton} from "./ShowPassword";
 import {hidePasswordButton} from "./HidePassword";
 
 function SignUpButton() {
-    const button01 = document.createElement('button');
-    button01.setAttribute('type', 'button');
-    button01.innerText = 'Sign Up';
-    button01.classList.add('btn', 'btn-success');
-    button01.style.marginBottom = '1em';
-    button01.style.marginLeft = '1em';
+    const buttonSignUp = document.createElement('button');
+    buttonSignUp.setAttribute('type', 'button');
+    buttonSignUp.innerText = 'Sign Up';
+    buttonSignUp.classList.add('btn', 'btn-success');
+    buttonSignUp.style.marginBottom = '1em';
+    buttonSignUp.style.marginLeft = '1em';
 
     // const navigateEvent = new CustomEvent('navigate', {
     //     //To Do
     // });
 
-    button01.addEventListener('click', () => {
+    buttonSignUp.addEventListener('click', () => {
         // Require browserify-fs which includes writefile() function
         const fs = require('browserify-fs')
 
@@ -34,21 +34,21 @@ function SignUpButton() {
         console.log(JSON.stringify(user));
     });
 
-    return button01;
+    return buttonSignUp;
 }
 
 function LogInButton() {
-    const button02 = document.createElement('button');
-    button02.setAttribute('type', 'button');
-    button02.innerText = 'Log In';
-    button02.classList.add('btn', 'btn-primary');
-    button02.style.marginBottom = '1em';
+    const buttonLogIn = document.createElement('button');
+    buttonLogIn.setAttribute('type', 'button');
+    buttonLogIn.innerText = 'Log In';
+    buttonLogIn.classList.add('btn', 'btn-primary');
+    buttonLogIn.style.marginBottom = '1em';
 
     // const navigateEvent = new CustomEvent('navigate', {
     //     //To Do
     // });
 
-    button02.addEventListener('click', () => {
+    buttonLogIn.addEventListener('click', () => {
         // Require browserify-fs which includes writefile() function
         const fs = require('browserify-fs')
 
@@ -68,7 +68,7 @@ function LogInButton() {
         console.log(JSON.stringify(user));
     });
 
-    return button02;
+    return buttonLogIn;
 }
 
 export function LoginSignup() {
