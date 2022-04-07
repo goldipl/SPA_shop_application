@@ -15,7 +15,7 @@ function SignUpButton() {
     // });
 
     buttonSignUp.addEventListener('click', () => {
-        let passInputValue = document.getElementById('passInput').value;
+        const passInputValue = document.getElementById('passInput').value;
         const textInputValue = document.getElementById('textInput').value;
 
         // Require browserify-fs which includes writefile() function
@@ -57,7 +57,7 @@ function LogInButton() {
     // });
 
     buttonLogIn.addEventListener('click', () => {
-        let passInputValue = document.getElementById('passInput').value;
+        const passInputValue = document.getElementById('passInput').value;
         const textInputValue = document.getElementById('textInput').value;
 
         // Require browserify-fs which includes writefile() function
