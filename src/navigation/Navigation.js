@@ -4,6 +4,7 @@ import { Cart } from '../views/Cart';
 import { NavigationButton } from './NavigationButton';
 import { LoginSignup } from '../views/LoginSignup';
 import { Calculate } from '../views/Calculate';
+import { Reservations } from '../views/Reservations';
 import './navigation.scss';
 
 
@@ -15,6 +16,7 @@ const navigationItems = [
     { component: Cart, name: 'Cart 🛒' },
     { component: LoginSignup, name: 'Log in / Sign up 🔒' },
     { component: Calculate, name: 'Calculate Your Funds 💰' },
+    { component: Reservations, name: 'Reservations 🔑' }
 ];
 
 
