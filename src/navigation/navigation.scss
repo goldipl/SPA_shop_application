@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 nav {
     background-color: #0d6efd;
-    margin-bottom: 1em;
+    margin-bottom: 16px;
     .active-btn {
         border-bottom: 4px solid #000000 !important;
         border-radius: 0 !important;
+    }
+}
+
+.logoSPAText {
+    font-family: 'Lobster', cursive;
+    color: #FFFFFF;
+    font-size: 32px;
+    margin-left: 16px;
+    span {
+        color: rgb(255, 191, 30);
     }
 }

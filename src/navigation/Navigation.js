@@ -30,6 +30,10 @@ export function Navigation() {
 
     navigationButtons[0].classList.add('active-btn');
 
+    nav.innerHTML = `
+    <div class="logoSPAText">Welcome to our <span>IT SPA</span></div>
+    `;
+
     nav.append(...navigationButtons);
 
     return nav;
