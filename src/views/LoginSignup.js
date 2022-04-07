@@ -15,13 +15,16 @@ function SignUpButton() {
     // });
 
     buttonSignUp.addEventListener('click', () => {
+        let passInputValue = document.getElementById('passInput').value;
+        const textInputValue = document.getElementById('textInput').value;
+
         // Require browserify-fs which includes writefile() function
         const fs = require('browserify-fs')
 
         // a simple object to write into the file
         let user = {
-            name: document.getElementById('textInput').value,
-            password: document.getElementById('passInput').value,
+            name: textInputValue,
+            password: passInputValue,
         };
         
         // Writing data into the 'db.json' file
@@ -32,6 +35,11 @@ function SignUpButton() {
 
         console.log(user);
         console.log(JSON.stringify(user));
+
+        // Checking passwords length
+        if ((document.getElementById('passInput').value).length < 10) {
+
+        }
     });
 
     return buttonSignUp;
@@ -49,13 +57,16 @@ function LogInButton() {
     // });
 
     buttonLogIn.addEventListener('click', () => {
+        let passInputValue = document.getElementById('passInput').value;
+        const textInputValue = document.getElementById('textInput').value;
+
         // Require browserify-fs which includes writefile() function
         const fs = require('browserify-fs')
 
         // a simple object to write into the file
         let user = {
-            name: document.getElementById('textInput').value,
-            password: document.getElementById('passInput').value,
+            name: textInputValue,
+            password: passInputValue,
         };
         
         // Writing data into the 'db.json' file
