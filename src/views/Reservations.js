@@ -42,16 +42,11 @@ export function Reservations() {
             </div>
             <div class="flex290">
                 <label for="checkin" class="field-label">Check-in Date</label>
-                <input type="date" id="start" name="trip-start" value="2018-07-22" min="2022-01-01" max="2025-12-31" required="">
+                <input type="date" id="start" name="trip-start" required="">
             </div>
             <div class="flex290">
                 <label for="checkout" class="field-label">Check-out Date</label>
-                <input type="date" id="start" name="trip-start" value="2018-07-22" min="2022-01-01" max="2025-12-31" required="">
-            </div>
-            <div class="mB8px">
-                <input type="checkbox" name="switch1" id="switch1" value="switch1">
-                <span class="switch-label" data-on="YES" data-off="NO"></span>
-                <span>Will you be bringing a dog/cat?</span>
+                <input type="date" id="start" name="trip-start" required="">
             </div>
             <div class="flex290">
                 <strong>Extra info:</strong>
