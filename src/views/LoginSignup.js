@@ -2,6 +2,11 @@ import {Router} from "../router/Router";
 import {showPasswordButton} from "./ShowPassword";
 import {hidePasswordButton} from "./HidePassword";
 
+const shortPassword = `
+Password too short!
+Must be minimum 10 characters 😊
+`;
+
 function SignUpButton() {
     const buttonSignUp = document.createElement('button');
     buttonSignUp.setAttribute('type', 'button');
@@ -13,11 +18,6 @@ function SignUpButton() {
     // const navigateEvent = new CustomEvent('navigate', {
     //     //To Do
     // });
-
-    const shortPassword = `
-      Password too short!
-      Must be minimum 10 characters 😊
-    `;
 
     buttonSignUp.addEventListener('click', () => {
         const passInputValue = document.getElementById('passInput').value;
