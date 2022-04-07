@@ -1,4 +1,4 @@
-import {Router} from "../router/Router";
+import {Router} from "./../router/Router";
 import "./calculate.scss";
 
 export function Calculate() {
