@@ -86,9 +86,9 @@ export function LoginSignup() {
     <h2>Log in / Sign up</h2>
     <div style="display: flex; flex-direction: column; width: 240px;">
       <label for="textInput">Login</label>
-      <input id="textInput" style="margin-bottom: 8px;">
+      <input id="textInput" style="margin-bottom: 8px;" placeholder="Your Login">
       <label for="passInput">Password</label>
-      <input id="passInput" type="password" style="margin-bottom: 8px;">
+      <input id="passInput" type="password" style="margin-bottom: 8px;" placeholder="Your Password">
     <div>
     `;
 
