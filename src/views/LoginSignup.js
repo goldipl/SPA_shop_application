@@ -14,6 +14,11 @@ function SignUpButton() {
     //     //To Do
     // });
 
+    const shortPassword = `
+      Password too short!
+      Must be minimum 10 characters 😊
+    `;
+
     buttonSignUp.addEventListener('click', () => {
         const passInputValue = document.getElementById('passInput').value;
         const textInputValue = document.getElementById('textInput').value;
@@ -33,12 +38,11 @@ function SignUpButton() {
             if (err) throw err;
         })
 
-        console.log(user);
-        console.log(JSON.stringify(user));
-
         // Checking passwords length
-        if ((document.getElementById('passInput').value).length < 10) {
-
+        if (passInputValue.length < 10) {
+            return alert(shortPassword);
+        } else {
+            return console.log('Haslo prawidlowe!');
         }
     });
 
@@ -75,8 +79,12 @@ function LogInButton() {
             if (err) throw err;
         })
 
-        console.log(user);
-        console.log(JSON.stringify(user));
+        // Checking passwords length
+        if (passInputValue.length < 10) {
+            return alert(shortPassword);
+        } else {
+            return console.log('Haslo prawidlowe!');
+        }
     });
 
     return buttonLogIn;
@@ -98,7 +106,7 @@ export function LoginSignup() {
     <div style="display: flex; flex-direction: column; width: 240px;">
       <label for="textInput">Login</label>
       <input id="textInput" style="margin-bottom: 8px;" placeholder="Your Login">
-      <label for="passInput">Password</label>
+      <label for="passInput">Password (min. 10 characters)</label>
       <input id="passInput" type="password" style="margin-bottom: 8px;" placeholder="Your Password">
     <div>
     `;
