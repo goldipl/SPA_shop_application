@@ -99,9 +99,8 @@ function SignUpButton() {
 function LogInButton() {
     const buttonLogIn = document.createElement('button');
     buttonLogIn.setAttribute('type', 'button');
-    buttonLogIn.disabled = true;
     buttonLogIn.innerText = 'Log In';
-    buttonLogIn.classList.add('btn', 'btn-light');
+    buttonLogIn.classList.add('btn', 'btn-primary');
     buttonLogIn.style.marginBottom = '1em';
 
     // const navigateEvent = new CustomEvent('navigate', {
@@ -109,40 +108,7 @@ function LogInButton() {
     // });
 
     buttonLogIn.addEventListener('click', () => {
-        const passInputValue = document.getElementById('passInput').value;
-        const textInputValue = document.getElementById('textInput').value;
-
-        // Require browserify-fs which includes writefile() function
-        const fs = require('browserify-fs')
-
-        // a simple object to write into the file
-        let user = {
-            name: textInputValue,
-            password: passInputValue,
-        };
-        
-        // Writing data into the 'db.json' file
-        fs.writeFile('./../../db.json', JSON.stringify(user), (err) => {
-            // error handling using throw
-            if (err) throw err;
-        })
-
-        // Checking passwords length
-        if (passInputValue.length < 10) {
-            const shortPassword = `Password too short! Must be minimum 10 characters 😡`;
-            divPassShort = document.createElement('div');
-            divPassShort.innerHTML = shortPassword;
-            divPassShort.style.paddingLeft = "32px";
-            divPassShort.style.color = "red";
-            document.body.append(divPassShort);
-
-        } else {
-            const divPassLong = document.createElement('div');
-            divPassLong.innerHTML = `Password contains <strong>${passInputValue.length}</strong> characters 😊`;
-            divPassLong.style.paddingLeft = "32px"; 
-            divPassLong.style.color = "green";
-            document.body.append(divPassLong);
-        }
+        alert("Sorry Login section doesn't work yet")
     });
 
     return buttonLogIn;
