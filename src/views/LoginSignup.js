@@ -33,40 +33,46 @@ function SignUpButton() {
             if (err) throw err;
         })
 
-        // Checking passwords length
-        if (passInputValue.length < 10) {
+        // Checking passwords length 
+        if ((passInputValue.length < 10) && (passInputValue.length > 0)) {
             const shortPassword = `Password too short! Must be minimum 10 characters 😡`;
             divPassShort = document.createElement('div');
             divPassShort.innerHTML = shortPassword;
             divPassShort.style.paddingLeft = "32px";
             divPassShort.style.color = "red";
             document.body.append(divPassShort);
-        } else {
+        } else if (passInputValue.length > 9) {
             const divPassLong = document.createElement('div');
-            divPassLong.innerHTML = `Password contains <strong>${passInputValue.length}</strong> characters 😊`;
+            divPassLong.innerHTML = `Password 👌. Password contains <strong>${passInputValue.length}</strong> characters 😊`;
             divPassLong.style.paddingLeft = "32px"; 
             divPassLong.style.color = "green";
             document.body.append(divPassLong);
+
+            // Checking used accounts
+            if (!localStorage["UsersAuth"]) {
+                localStorage["UsersAuth"] = "{}";
+            }
+            
+            const usedAccounts = JSON.parse(localStorage["UsersAuth"]);
+                        
+            if(textInputValue in usedAccounts) {
+                const loginUsed = document.createElement('div');
+                loginUsed.innerHTML = `Login: <strong>${textInputValue}</strong> was used ⚠️`;
+                loginUsed.style.paddingLeft = "32px"; 
+                loginUsed.style.color = "green";
+                document.body.append(loginUsed);
+            } else {
+                usedAccounts[textInputValue] = passInputValue;
+            }
+            localStorage["UsersAuth"] = JSON.stringify(usedAccounts);
+        } else if (passInputValue.length === 0) {
+            const divPassLong = document.createElement('div');
+            divPassLong.innerHTML = `Fill inputs ⚠️`;
+            divPassLong.style.paddingLeft = "32px"; 
+            divPassLong.style.color = "red";
+            document.body.append(divPassLong);
         }
 
-        // Checking used accounts
-        if(!localStorage["UsersAuth"]) {
-            localStorage["UsersAuth"] = "{}";
-        }
-
-        const usedAccounts = JSON.parse(localStorage["UsersAuth"]);
-        
-        if(textInputValue in usedAccounts) {
-            const loginUsed = document.createElement('div');
-            loginUsed.innerHTML = `Login: <strong>${textInputValue}</strong> was used ⚠️`;
-            loginUsed.style.paddingLeft = "32px"; 
-            loginUsed.style.color = "green";
-            document.body.append(loginUsed);
-        } else {
-            usedAccounts[textInputValue] = passInputValue;
-        }
-
-        localStorage["UsersAuth"] = JSON.stringify(usedAccounts);
     });
 
     return buttonSignUp;
