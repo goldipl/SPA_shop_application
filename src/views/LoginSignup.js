@@ -59,7 +59,7 @@ function SignUpButton() {
                 const loginUsed = document.createElement('div');
                 loginUsed.innerHTML = `Login: <strong>${textInputValue}</strong> was used ⚠️`;
                 loginUsed.style.paddingLeft = "32px"; 
-                loginUsed.style.color = "green";
+                loginUsed.style.color = "red";
                 document.body.append(loginUsed);
             } else {
                 usedAccounts[textInputValue] = passInputValue;
