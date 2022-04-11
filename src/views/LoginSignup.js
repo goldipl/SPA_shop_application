@@ -48,6 +48,25 @@ function SignUpButton() {
             divPassLong.style.color = "green";
             document.body.append(divPassLong);
         }
+
+        // Checking used accounts
+        if(!localStorage["UsersAuth"]) {
+            localStorage["UsersAuth"] = "{}";
+        }
+
+        const usedAccounts = JSON.parse(localStorage["UsersAuth"]);
+        
+        if(textInputValue in usedAccounts) {
+            const loginUsed = document.createElement('div');
+            loginUsed.innerHTML = `Login: <strong>${textInputValue}</strong> was used ⚠️`;
+            loginUsed.style.paddingLeft = "32px"; 
+            loginUsed.style.color = "green";
+            document.body.append(loginUsed);
+        } else {
+            usedAccounts[textInputValue] = passInputValue;
+        }
+
+        localStorage["UsersAuth"] = JSON.stringify(usedAccounts);
     });
 
     return buttonSignUp;
@@ -56,8 +75,9 @@ function SignUpButton() {
 function LogInButton() {
     const buttonLogIn = document.createElement('button');
     buttonLogIn.setAttribute('type', 'button');
+    buttonLogIn.disabled = true;
     buttonLogIn.innerText = 'Log In';
-    buttonLogIn.classList.add('btn', 'btn-primary');
+    buttonLogIn.classList.add('btn', 'btn-light');
     buttonLogIn.style.marginBottom = '1em';
 
     // const navigateEvent = new CustomEvent('navigate', {
