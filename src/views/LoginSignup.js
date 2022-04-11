@@ -34,14 +34,14 @@ function SignUpButton() {
         })
 
         // Checking passwords length 
-        if ((passInputValue.length < 10) && (passInputValue.length > 0)) {
+        if ((passInputValue.length < 10) && (passInputValue.length > 0) && (textInputValue.length !== 0))  {
             const shortPassword = `Password too short! Must be minimum 10 characters 😡`;
             divPassShort = document.createElement('div');
             divPassShort.innerHTML = shortPassword;
             divPassShort.style.paddingLeft = "32px";
             divPassShort.style.color = "red";
             document.body.append(divPassShort);
-        } else if (passInputValue.length > 9) {
+        } else if ((passInputValue.length > 9) && (textInputValue.length !== 0)) {
             const divPassLong = document.createElement('div');
             divPassLong.innerHTML = `Password 👌. Password contains <strong>${passInputValue.length}</strong> characters 😊`;
             divPassLong.style.paddingLeft = "32px"; 
@@ -65,12 +65,30 @@ function SignUpButton() {
                 usedAccounts[textInputValue] = passInputValue;
             }
             localStorage["UsersAuth"] = JSON.stringify(usedAccounts);
-        } else if (passInputValue.length === 0) {
-            const divPassLong = document.createElement('div');
-            divPassLong.innerHTML = `Fill inputs ⚠️`;
-            divPassLong.style.paddingLeft = "32px"; 
-            divPassLong.style.color = "red";
-            document.body.append(divPassLong);
+        } 
+
+        //Checking when inputs are filled || empty
+        if ((passInputValue.length === 0) && (textInputValue.length === 0)) {
+            const emptyInputsMessage = `Fill Login input ⚠️ & Fill Password input also⚠️`;
+            divContainer = document.createElement('div');
+            divContainer.innerHTML = emptyInputsMessage;
+            divContainer.style.paddingLeft = "32px";
+            divContainer.style.color = "red";
+            document.body.append(divContainer);
+        } else if ((passInputValue.length !== 0) && (textInputValue.length === 0)) {
+            const emptyInputsMessage = `Fill Login input ⚠️`;
+            divContainer = document.createElement('div');
+            divContainer.innerHTML = emptyInputsMessage;
+            divContainer.style.paddingLeft = "32px";
+            divContainer.style.color = "red";
+            document.body.append(divContainer);
+        } else if ((passInputValue.length === 0) && (textInputValue.length !== 0)) {
+            const emptyInputsMessage = `Fill Password input ⚠️`;
+            divContainer = document.createElement('div');
+            divContainer.innerHTML = emptyInputsMessage;
+            divContainer.style.paddingLeft = "32px";
+            divContainer.style.color = "red";
+            document.body.append(divContainer);
         }
 
     });
