@@ -2,11 +2,6 @@ import {Router} from "../router/Router";
 import {showPasswordButton} from "./ShowPassword";
 import {hidePasswordButton} from "./HidePassword";
 
-const shortPassword = `
-Password too short!
-Must be minimum 10 characters 😊
-`;
-
 function SignUpButton() {
     const buttonSignUp = document.createElement('button');
     buttonSignUp.setAttribute('type', 'button');
@@ -40,9 +35,19 @@ function SignUpButton() {
 
         // Checking passwords length
         if (passInputValue.length < 10) {
-            return alert(shortPassword);
+            const divPassShort = `Password too short! Must be minimum 10 characters 😡`;
+            divPassShort = document.createElement('p');
+            divPassShort.innerHTML = shortPassword;
+            divPassShort.style.paddingLeft = "32px";
+            divPassShort.style.color = "red";
+            document.body.append(divPassShort);
+
         } else {
-            return console.log('Haslo prawidlowe!');
+            const divPassLong = document.createElement('div');
+            divPassLong.innerHTML = `Password contains <strong>${passInputValue.length}</strong> characters`;
+            divPassLong.style.paddingLeft = "32px"; 
+            divPassLong.style.color = "green";
+            document.body.append(divPassLong);
         }
     });
 
@@ -81,9 +86,19 @@ function LogInButton() {
 
         // Checking passwords length
         if (passInputValue.length < 10) {
-            return alert(shortPassword);
+            const divPassShort = `Password too short! Must be minimum 10 characters 😡`;
+            divPassShort = document.createElement('p');
+            divPassShort.innerHTML = shortPassword;
+            divPassShort.style.paddingLeft = "32px";
+            divPassShort.style.color = "red";
+            document.body.append(divPassShort);
+
         } else {
-            return console.log('Haslo prawidlowe!');
+            const divPassLong = document.createElement('div');
+            divPassLong.innerHTML = `Password contains <strong>${passInputValue.length}</strong> characters`;
+            divPassLong.style.paddingLeft = "32px"; 
+            divPassLong.style.color = "green";
+            document.body.append(divPassLong);
         }
     });
 
