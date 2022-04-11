@@ -35,16 +35,15 @@ function SignUpButton() {
 
         // Checking passwords length
         if (passInputValue.length < 10) {
-            const divPassShort = `Password too short! Must be minimum 10 characters 😡`;
-            divPassShort = document.createElement('p');
+            const shortPassword = `Password too short! Must be minimum 10 characters 😡`;
+            divPassShort = document.createElement('div');
             divPassShort.innerHTML = shortPassword;
             divPassShort.style.paddingLeft = "32px";
             divPassShort.style.color = "red";
             document.body.append(divPassShort);
-
         } else {
             const divPassLong = document.createElement('div');
-            divPassLong.innerHTML = `Password contains <strong>${passInputValue.length}</strong> characters`;
+            divPassLong.innerHTML = `Password contains <strong>${passInputValue.length}</strong> characters 😊`;
             divPassLong.style.paddingLeft = "32px"; 
             divPassLong.style.color = "green";
             document.body.append(divPassLong);
@@ -86,8 +85,8 @@ function LogInButton() {
 
         // Checking passwords length
         if (passInputValue.length < 10) {
-            const divPassShort = `Password too short! Must be minimum 10 characters 😡`;
-            divPassShort = document.createElement('p');
+            const shortPassword = `Password too short! Must be minimum 10 characters 😡`;
+            divPassShort = document.createElement('div');
             divPassShort.innerHTML = shortPassword;
             divPassShort.style.paddingLeft = "32px";
             divPassShort.style.color = "red";
@@ -95,7 +94,7 @@ function LogInButton() {
 
         } else {
             const divPassLong = document.createElement('div');
-            divPassLong.innerHTML = `Password contains <strong>${passInputValue.length}</strong> characters`;
+            divPassLong.innerHTML = `Password contains <strong>${passInputValue.length}</strong> characters 😊`;
             divPassLong.style.paddingLeft = "32px"; 
             divPassLong.style.color = "green";
             document.body.append(divPassLong);
