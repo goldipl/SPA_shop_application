@@ -42,11 +42,11 @@ export function Reservations() {
             </div>
             <div class="flex290">
                 <label for="checkin" class="field-label">Check-in Date</label>
-                <input type="date" id="start" name="trip-start" required="" min='1899-01-01' max='2000-13-13'>
+                <input type="date" id="dateInputMin" name="trip-start" required="" min='1899-01-01'>
             </div>
             <div class="flex290">
                 <label for="checkout" class="field-label">Check-out Date</label>
-                <input type="date" id="end" name="trip-end" required="" min='1899-01-01' max='2000-13-13'>
+                <input type="date" id="dateInputMax" name="trip-end" required="" max='2000-13-13'>
             </div>
             <div class="flex290">
                 <strong>Extra info:</strong>
@@ -59,6 +59,51 @@ export function Reservations() {
         </form>
     </div>
     `;
+
+    const scriptTripStart =
+    `<script>
+    const startDateButton = document.getElementById("dateInputMin");
+    startDateButton.addEventListener("click", () => {
+        let today = new Date();
+        let dd = today.getDate();
+        let mm = today.getMonth()+1; //January is 0!
+        let yyyy = today.getFullYear();
+        if(dd<10){
+                dd='0'+dd
+            } 
+            if(mm<10){
+                mm='0'+mm
+            } 
+
+        today = yyyy+'-'+mm+'-'+dd;
+        document.getElementById("dateInputMin").setAttribute("min", today);
+    });
+    </script>`;
+
+    const scriptTripEnd =
+    `<script>
+    const endMaxDateButton = document.getElementById("dateInputMax");
+    endMaxDateButton.addEventListener("click", () => {
+        let lastDay = new Date();
+        let lastdd = lastDay.getDate();
+        let lastmm = lastDay.getMonth()+1; //January is 0!
+        let lastyyyy = lastDay.getFullYear()+1;
+        if(lastdd<10){
+            lastdd='0'+lastdd
+            } 
+            if(lastmm<10){
+                lastmm='0'+lastmm
+            } 
+
+            lastDay = lastyyyy+'-'+lastmm+'-'+lastdd;
+        document.getElementById("dateInputMax").setAttribute("max", lastDay);
+    });
+    </script>`;
+
+    const scriptTripStartTextFragment = document.createRange().createContextualFragment(scriptTripStart);
+    const scriptTripEndTextFragment = document.createRange().createContextualFragment(scriptTripEnd);
+    section.append(scriptTripStartTextFragment);
+    section.append(scriptTripEndTextFragment);
 
     return section;
 }
