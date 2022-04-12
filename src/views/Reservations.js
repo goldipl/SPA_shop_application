@@ -1,4 +1,5 @@
 import {Router} from "../router/Router";
+import { DateStart } from "./DateStart";
 import "./reservations.scss"
 
 
@@ -42,11 +43,11 @@ export function Reservations() {
             </div>
             <div class="flex290">
                 <label for="checkin" class="field-label">Check-in Date</label>
-                <input type="date" id="start" name="trip-start" required="">
+                <input type="date" id="start" name="trip-start" required="" min='1899-01-01' max='2000-13-13'>
             </div>
             <div class="flex290">
                 <label for="checkout" class="field-label">Check-out Date</label>
-                <input type="date" id="start" name="trip-start" required="">
+                <input type="date" id="end" name="trip-end" required="" min='1899-01-01' max='2000-13-13'>
             </div>
             <div class="flex290">
                 <strong>Extra info:</strong>
