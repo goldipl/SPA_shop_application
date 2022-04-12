@@ -1,5 +1,5 @@
 import {Room} from "./Room";
-import {Router} from "./../router/Router";
+import {Router} from "../../router/Router";
 
 export function Rooms() {
     const section = document.createElement('section');

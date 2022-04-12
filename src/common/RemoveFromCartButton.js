@@ -1,5 +1,5 @@
 import { cartManager } from '../cart/CartManager';
-import { Cart } from '../views/Cart';
+import { Cart } from '../views/cartView/Cart';
 
 export function RemoveFromCartButton(item) {
    const button = document.createElement('button');

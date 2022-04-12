@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import './it-spa.scss';
-import { Rooms } from './views/Rooms';
-import { Treatments } from './views/Treatments';
+import { Rooms } from './views/roomsView/Rooms';
+import { Treatments } from './views/treatmentsView/Treatments';
 import { Navigation } from './navigation/Navigation';
 
 const main = document.querySelector('main');

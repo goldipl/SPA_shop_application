@@ -1,5 +1,5 @@
 import { RoomDetails } from './RoomDetails';
-import { AddToCartButton } from '../common/AddToCartButton';
+import { AddToCartButton } from '../../common/AddToCartButton';
 import "./room.scss"
 
 function SeeMoreButton(id) {

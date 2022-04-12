@@ -1,6 +1,6 @@
-import {Router} from "../router/Router";
-import {showPasswordButton} from "../common/ShowPasswordButton";
-import {hidePasswordButton} from "../common/HidePasswordButton";
+import {Router} from "../../router/Router";
+import {showPasswordButton} from "../../common/ShowPasswordButton";
+import {hidePasswordButton} from "../../common/HidePasswordButton";
 
 function SignUpButton() {
     const buttonSignUp = document.createElement('button');

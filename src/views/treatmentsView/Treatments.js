@@ -1,5 +1,5 @@
 import {Treatment} from "./Treatment";
-import {Router} from "./../router/Router";
+import {Router} from "./../../router/Router";
 
 export function Treatments() {
 

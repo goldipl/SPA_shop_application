@@ -1,4 +1,4 @@
-import { BackButton } from '../common/BackButton';
+import { BackButton } from '../../common/BackButton';
 import { Rooms } from './Rooms';
 
 export function RoomDetails(id) {

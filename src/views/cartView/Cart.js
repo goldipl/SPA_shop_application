@@ -1,6 +1,6 @@
-import {cartManager} from '../cart/CartManager';
-import {RemoveFromCartButton} from '../common/RemoveFromCartButton';
-import {Router} from "./../router/Router";
+import {cartManager} from '../../cart/CartManager';
+import {RemoveFromCartButton} from '../../common/RemoveFromCartButton';
+import {Router} from "./../../router/Router";
 
 const add = (a, b) => a + b;
 const calculateTotal = (items) => items.map(item => item.price).reduce(add, 0).toFixed(2);

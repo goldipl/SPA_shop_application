@@ -1,4 +1,4 @@
-import { AddToCartButton } from '../common/AddToCartButton';
+import { AddToCartButton } from '../../common/AddToCartButton';
 import "./treatment.scss"
 
 export function Treatment(treatment) {

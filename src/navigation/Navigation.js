@@ -1,10 +1,10 @@
-import { Rooms } from '../views/Rooms';
-import { Treatments } from '../views/Treatments';
-import { Cart } from '../views/Cart';
+import { Rooms } from '../views/roomsView/Rooms';
+import { Treatments } from '../views/treatmentsView/Treatments';
+import { Cart } from '../views/cartView/Cart';
 import { NavigationButton } from './NavigationButton';
-import { LoginSignup } from '../views/LoginSignup';
-import { Calculate } from '../views/Calculate';
-import { Reservations } from '../views/Reservations';
+import { LoginSignup } from '../views/loginSignupView/LoginSignup';
+import { Calculate } from '../views/calculateView/Calculate';
+import { Reservations } from '../views/reservationView/Reservations';
 import './navigation.scss';
 
 
