@@ -17,6 +17,7 @@ function SignUpButton() {
     buttonSignUp.addEventListener('click', () => {
         const passInputValue = document.getElementById('passInput').value;
         const textInputValue = document.getElementById('textInput').value;
+        const loginSection = document.querySelector(".loginSection");
 
         // Require browserify-fs which includes writefile() function
         const fs = require('browserify-fs')
@@ -38,15 +39,13 @@ function SignUpButton() {
             const shortPassword = `Password too short! Must be minimum 10 characters 😡`;
             divPassShort = document.createElement('div');
             divPassShort.innerHTML = shortPassword;
-            divPassShort.style.paddingLeft = "32px";
             divPassShort.style.color = "red";
-            document.body.append(divPassShort);
+            loginSection.append(divPassShort);
         } else if ((passInputValue.length > 9) && (textInputValue.length !== 0)) {
             const divPassLong = document.createElement('div');
             divPassLong.innerHTML = `Password 👌. Password contains <strong>${passInputValue.length}</strong> characters 😊`;
-            divPassLong.style.paddingLeft = "32px"; 
             divPassLong.style.color = "green";
-            document.body.append(divPassLong);
+            loginSection.append(divPassLong);
 
             // Checking used accounts
             if (!localStorage["UsersAuth"]) {
@@ -58,9 +57,8 @@ function SignUpButton() {
             if(textInputValue in usedAccounts) {
                 const loginUsed = document.createElement('div');
                 loginUsed.innerHTML = `Login: <strong>${textInputValue}</strong> was used ⚠️`;
-                loginUsed.style.paddingLeft = "32px"; 
                 loginUsed.style.color = "red";
-                document.body.append(loginUsed);
+                loginSection.append(loginUsed);
             } else {
                 usedAccounts[textInputValue] = passInputValue;
             }
@@ -72,23 +70,20 @@ function SignUpButton() {
             const emptyInputsMessage = `Fill Login input ⚠️ & Fill Password input also⚠️`;
             divContainer = document.createElement('div');
             divContainer.innerHTML = emptyInputsMessage;
-            divContainer.style.paddingLeft = "32px";
             divContainer.style.color = "red";
-            document.body.append(divContainer);
+            loginSection.append(divContainer);
         } else if ((passInputValue.length !== 0) && (textInputValue.length === 0)) {
             const emptyInputsMessage = `Fill Login input ⚠️`;
             divContainer = document.createElement('div');
             divContainer.innerHTML = emptyInputsMessage;
-            divContainer.style.paddingLeft = "32px";
             divContainer.style.color = "red";
-            document.body.append(divContainer);
+            loginSection.append(divContainer);
         } else if ((passInputValue.length === 0) && (textInputValue.length !== 0)) {
             const emptyInputsMessage = `Fill Password input ⚠️`;
             divContainer = document.createElement('div');
             divContainer.innerHTML = emptyInputsMessage;
-            divContainer.style.paddingLeft = "32px";
             divContainer.style.color = "red";
-            document.body.append(divContainer);
+            loginSection.append(divContainer);
         }
 
     });
