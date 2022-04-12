@@ -117,6 +117,7 @@ function LogInButton() {
 export function LoginSignup() {
 
     const section = document.createElement('section');
+    section.className = "loginSection";
 
     // ----- My own routing ----- start
     console.log('Login subpage');
