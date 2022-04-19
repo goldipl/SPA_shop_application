@@ -1,5 +1,6 @@
 import {Treatment} from "./Treatment";
 import {Router} from "./../../router/Router";
+import "./treatment.scss"
 
 export function Treatments() {
 
@@ -23,10 +24,13 @@ export function Treatments() {
     fetch('http://localhost:3000/treatments')
         .then(response => response.json())
         .then(treatments => {
+            const treatmentsContainer = document.createElement('div');
+            treatmentsContainer.classList.add("treatmentsSection");
             const articles = treatments.map(treatment => Treatment(treatment));
 
             section.querySelector('#loading').remove();
-            section.append(...articles);
+            treatmentsContainer.append(...articles);
+            section.append(treatmentsContainer);
         });
 
     return section;
