@@ -3,7 +3,7 @@
   "rooms": [
     {
       "id": 1,
-      "name": "Pokój unarny",
+      "name": "Standard Room",
       "beds": 1,
       "guests": 1,
       "price": 170,
@@ -12,7 +12,7 @@
     },
     {
       "id": 2,
-      "name": "Pokój binarny",
+      "name": "Standard+ Room",
       "beds": 1,
       "guests": 2,
       "price": 240,
@@ -21,7 +21,7 @@
     },
     {
       "id": 3,
-      "name": "Pokój trójkowy",
+      "name": "Exclusive Room",
       "beds": 2,
       "guests": 3,
       "price": 290,
@@ -30,7 +30,7 @@
     },
     {
       "id": 4,
-      "name": "Pokój czwórkowy",
+      "name": "VIP Room",
       "beds": 2,
       "guests": 4,
       "price": 340,
@@ -41,7 +41,7 @@
   "treatments": [
     {
       "id": 1,
-      "name": "Masaż rozgrzanym monitorem",
+      "name": "Hot back massage",
       "area": "back",
       "time": 30,
       "price": 80,
@@ -49,15 +49,15 @@
     },
     {
       "id": 2,
-      "name": "Biczowanie kablem od myszy",
-      "area": "back",
+      "name": "Hands massage",
+      "area": "hands",
       "time": 20,
       "price": 70,
       "img": "https://images.pexels.com/photos/5185148/pexels-photo-5185148.jpeg"
     },
     {
       "id": 3,
-      "name": "Peeling odłamkami płyty CD",
+      "name": "Peeling",
       "area": "face",
       "time": 15,
       "price": 50,
@@ -65,7 +65,7 @@
     },
     {
       "id": 4,
-      "name": "Pedicure woskiem z USB",
+      "name": "Pedicure",
       "area": "legs",
       "time": 25,
       "price": 100,
@@ -73,7 +73,7 @@
     },
     {
       "id": 5,
-      "name": "Manicure analogowo-cyfrowy",
+      "name": "Manicure",
       "area": "hands",
       "time": 45,
       "price": 150,
@@ -81,7 +81,7 @@
     },
     {
       "id": 6,
-      "name": "Kąpiel w gorącej kawie",
+      "name": "Hot bathwater",
       "area": "body",
       "time": 60,
       "price": 200,
@@ -89,7 +89,7 @@
     },
     {
       "id": 7,
-      "name": "Depilacja dyskiem twardym",
+      "name": "Depilation",
       "area": "body",
       "time": 45,
       "price": 120,
