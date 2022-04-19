@@ -22,11 +22,13 @@ function SeeMoreButton(id) {
 
 
 export function Room(room) {
-    const { id, name, price } = room;
+    const { id, name, price, img } = room;
     const article = document.createElement('article');
     article.className = 'roomArticle';
 
     article.innerHTML = `
+        <img src=${img} width=auto height=150></img>
+        <br><br>
         <h4>${name}</h4>
         <p>Price: <strong>${price.toFixed(2)}</strong> USD</p>
         ${price < 200 ? '⭐⭐' : '⭐⭐⭐'}
