@@ -89,11 +89,11 @@ export function Cart() {
                     <input type="number" id="children" name="children" class="gui-input" required="" placeholder="Number of children">
                 </div>
                 <div class="flex290">
-                    <label for="checkin" class="field-label">Check-in Date (min date: today)</label>
+                    <label for="checkin" class="field-label">Check-in Date (min date: today - click on calendar icon)</label>
                     <input type="date" id="dateInputMin" name="trip-start" required="" min='1899-01-01'>
                 </div>
                 <div class="flex290">
-                    <label for="checkout" class="field-label">Check-out Date (max date: year from today)</label>
+                    <label for="checkout" class="field-label">Check-out Date (max date: year from today - click on calendar icon)</label>
                     <input type="date" id="dateInputMax" name="trip-end" required="" max='2000-13-13'>
                 </div>
                 <div class="flex290">
