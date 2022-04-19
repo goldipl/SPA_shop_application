@@ -31,6 +31,7 @@ export function Cart() {
     tableHead.innerHTML = `
         <th>Item</th>
         <th>Price</th>
+        <th>Image</th>
     `;
 
     const tableRows = cartItems.map(item => {
@@ -39,6 +40,7 @@ export function Cart() {
         tr.innerHTML = `
             <td>${item.name}</td>
             <td>${item.price.toFixed(2)}</td>
+            <td><img width=100 height=auto src=${item.img}></img></td>
             <td></td>
         `;
 
