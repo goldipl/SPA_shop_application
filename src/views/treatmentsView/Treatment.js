@@ -10,8 +10,9 @@ export function Treatment(treatment) {
     <p>Area: ${area}</p>
     <p>Time: ${time} minutes</p>
     <footer>
-        <strong>${price.toFixed(2)}</strong>
-        ${price < 100 ? '✔️' : '❌'}
+        <strong>${price.toFixed(2)}</strong> USD
+        ${price < 100 ? '💰' : '💰💰💰'}
+        <br><br>
     </footer>
 `;
 
