@@ -67,7 +67,7 @@ function SignUpButton() {
 
         //Checking when inputs are filled || empty
         if ((passInputValue.length === 0) && (textInputValue.length === 0)) {
-            const emptyInputsMessage = `Fill Login input ⚠️ & Fill Password input also⚠️`;
+            const emptyInputsMessage = `Fill Password & Login input ⚠️`;
             divContainer = document.createElement('div');
             divContainer.innerHTML = emptyInputsMessage;
             divContainer.style.color = "red";
