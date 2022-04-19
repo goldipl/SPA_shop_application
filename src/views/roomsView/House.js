@@ -1,3 +1,4 @@
+import { HouseDetails } from './HouseDetails';
 import { AddToCartButton } from '../../common/AddToCartButton';
 import "./house.scss"
 
@@ -35,6 +36,7 @@ export function House(house) {
     `;
 
     article.append(AddToCartButton(house));
+    article.append(SeeMoreButton(id));
 
     return article;
 }
