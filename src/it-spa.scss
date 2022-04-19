@@ -11,3 +11,11 @@ body {
         padding: 0 2em;
     }
 }
+
+@media (max-width: 400px) {
+    body {   
+        main {
+        padding: 8px;
+        }
+    }
+}
