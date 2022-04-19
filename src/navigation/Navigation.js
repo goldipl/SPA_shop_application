@@ -12,7 +12,7 @@ const navigationItems = [
     //      jaki widok, tekst na guziku
     { component: Rooms, name: 'Rooms 🚪' },
     { component: Treatments, name: 'Treatments 💊' },
-    { component: Cart, name: 'Cart 🛒 & Reservations 🔑' },
+    { component: Cart, name: 'Cart 🛒 & Reservation 🔑' },
     { component: LoginSignup, name: 'Log in / Sign up 🔒' },
     { component: Calculate, name: 'Calculate Your Funds 💰' },
 ];

@@ -10,8 +10,8 @@ const calculateTotal = (items) => items.map(item => item.price).reduce(add, 0).t
 export function Cart() {
 
     // ----- My own routing ----- start
-    console.log('Cart & Reservations subpage');
-    const endpoint = 'CartAndReservations';
+    console.log('Cart & Reservation subpage');
+    const endpoint = 'CartAndReservation';
     
     Router(endpoint);
     // ----- My own routing ----- end
@@ -61,7 +61,7 @@ export function Cart() {
     const personal = document.createElement('div');
     personal.classList.add('personalInfo');
     personal.innerHTML = `
-        <h2>Personal Info</h2>
+        <h2>Reservation</h2>
         <div class="form_container">
             <form method="post" action="/" id="booking">
                 <div class="flex290">
