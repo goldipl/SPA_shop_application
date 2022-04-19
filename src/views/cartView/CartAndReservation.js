@@ -10,8 +10,8 @@ const calculateTotal = (items) => items.map(item => item.price).reduce(add, 0).t
 export function Cart() {
 
     // ----- My own routing ----- start
-    console.log('Cart subpage');
-    const endpoint = 'Cart';
+    console.log('Cart & Reservations subpage');
+    const endpoint = 'CartAndReservations';
     
     Router(endpoint);
     // ----- My own routing ----- end
