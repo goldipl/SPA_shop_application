@@ -113,7 +113,7 @@ export function Cart() {
 
     const scriptTripStart =
     `<script>
-    const startDateButton = document.getElementById("dateInputMin");
+    var startDateButton = document.getElementById("dateInputMin");
     startDateButton.addEventListener("click", () => {
         let today = new Date();
         let dd = today.getDate();
@@ -133,7 +133,7 @@ export function Cart() {
 
     const scriptTripEnd =
     `<script>
-    const endMaxDateButton = document.getElementById("dateInputMax");
+    var endMaxDateButton = document.getElementById("dateInputMax");
     endMaxDateButton.addEventListener("click", () => {
         let lastDay = new Date();
         let lastdd = lastDay.getDate();
