@@ -56,5 +56,14 @@ export function Cart() {
     table.append(tableHead, ...tableRows, tableFooter);
     section.append(table);
 
+
+    const personal = document.createElement('div');
+    personal.classList.add('personalInfo');
+    personal.innerHTML = `
+        <h2>Personal Info</h2>
+    `;
+
+    section.append(personal);
+
     return section;
 }
