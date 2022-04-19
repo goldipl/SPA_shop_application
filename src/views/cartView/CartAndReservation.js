@@ -32,6 +32,7 @@ export function Cart() {
         <th>Item</th>
         <th>Price</th>
         <th>Image</th>
+        <th>Delete</th>
     `;
 
     const tableRows = cartItems.map(item => {
@@ -51,7 +52,7 @@ export function Cart() {
 
     const tableFooter = document.createElement('tr');
     tableFooter.innerHTML = `
-        <td><strong>Suma:</strong></td>
+        <td><strong>Total:</strong></td>
         <td><strong> ${calculateTotal(cartItems)}</strong></td>
         <td></td>
     `;
