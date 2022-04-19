@@ -12,10 +12,23 @@ body {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 360px) {
     body {   
         main {
         padding: 8px;
         }
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logoSPAText {
+        text-align: center;
+        margin-left: 0 !important;
     }
 }
