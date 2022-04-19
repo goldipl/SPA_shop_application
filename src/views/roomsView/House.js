@@ -30,7 +30,7 @@ export function House(house) {
         <br><br>
         <h4>${name}</h4>
         <p>Price: <strong>${price.toFixed(2)}</strong> USD</p>
-        ${price < 200 ? '⭐⭐' : '⭐⭐⭐'}
+        ${price < 600 ? '⭐⭐⭐' : '⭐⭐⭐⭐⭐'}
         <br><br>
     `;
 
