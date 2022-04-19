@@ -44,49 +44,56 @@
       "name": "Masaż rozgrzanym monitorem",
       "area": "back",
       "time": 30,
-      "price": 80
+      "price": 80,
+      "img": "https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg"
     },
     {
       "id": 2,
       "name": "Biczowanie kablem od myszy",
       "area": "back",
       "time": 20,
-      "price": 70
+      "price": 70,
+      "img": "https://images.pexels.com/photos/5185148/pexels-photo-5185148.jpeg"
     },
     {
       "id": 3,
       "name": "Peeling odłamkami płyty CD",
       "area": "face",
       "time": 15,
-      "price": 50
+      "price": 50,
+      "img": "https://images.pexels.com/photos/3764013/pexels-photo-3764013.jpeg"
     },
     {
       "id": 4,
       "name": "Pedicure woskiem z USB",
       "area": "legs",
       "time": 25,
-      "price": 100
+      "price": 100,
+      "img": "https://images.pexels.com/photos/6663566/pexels-photo-6663566.jpeg"
     },
     {
       "id": 5,
       "name": "Manicure analogowo-cyfrowy",
       "area": "hands",
       "time": 45,
-      "price": 150
+      "price": 150,
+      "img": "https://images.pexels.com/photos/939836/pexels-photo-939836.jpeg"
     },
     {
       "id": 6,
       "name": "Kąpiel w gorącej kawie",
       "area": "body",
       "time": 60,
-      "price": 200
+      "price": 200,
+      "img": "https://images.pexels.com/photos/7019696/pexels-photo-7019696.jpeg"
     },
     {
       "id": 7,
       "name": "Depilacja dyskiem twardym",
       "area": "body",
       "time": 45,
-      "price": 120
+      "price": 120,
+      "img": "https://images.pexels.com/photos/4156336/pexels-photo-4156336.jpeg"
     }
   ]
 }
