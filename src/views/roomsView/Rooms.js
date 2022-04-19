@@ -22,6 +22,7 @@ export function Rooms() {
         .then(response => response.json())
         .then(rooms => {
             const div = document.createElement('div');
+            div.classList.add("roomsContainer");
 
             const lis = rooms.map(room => Room(room));
 

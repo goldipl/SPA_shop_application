@@ -3,3 +3,12 @@ article.roomArticle {
     padding: 1em 2em;
     background-color: rgba(209, 253, 13, 0.1);
 }
+
+.roomsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.roomsContainer .roomArticle {
+    margin-right: 8px;
+}
