@@ -3,3 +3,31 @@ article {
     padding: 1em 2em;
     background-color: rgb(13 110 253 / 10%);
 }
+
+.treatmentsSection h2 {
+    width: 100%;
+}
+
+.treatmentsSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.treatmentContainer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8px;
+    width: 45%;
+    align-items: center;
+}
+
+.treatmentContainer img {
+    margin: 8px auto;
+}
+
+@media (max-width: 800px) {
+    .treatmentContainer {
+        width: 90%;
+    }
+}
