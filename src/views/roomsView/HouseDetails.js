@@ -13,7 +13,7 @@ export function HouseDetails(id) {
     // fetch(`https://my-json-server.typicode.com/goldipl/SPA_shop_application/houses/${id}`)
         .then(response => response.json())
         .then(house => {
-            const { name, beds, guests, price, description } = house;
+            const { name, beds, guests, price, description, img } = house;
 
             const article = document.createElement('article');
 
@@ -21,6 +21,8 @@ export function HouseDetails(id) {
                 <h1>${name}</h1>
 
                 <hr>
+                <img src=${img} width=auto height=150></img>
+                <p></p>
 
                 <p>${beds} x 🛏️</p>
                 <p>${guests} x 💁</p>
