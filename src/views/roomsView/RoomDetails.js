@@ -18,7 +18,7 @@ export function RoomDetails(id) {
             const article = document.createElement('article');
 
             article.innerHTML = `
-                <h1>${name}</h1>
+                <h1>${name} ${price < 200 ? '⭐⭐' : '⭐⭐⭐'}</h1>
 
                 <hr>
                 <img src=${img} width=auto height=150></img>
@@ -30,8 +30,7 @@ export function RoomDetails(id) {
                 <p>${description}</p>
 
                 <footer>
-                    <strong>${price.toFixed(2)}</strong>
-                    ${price < 100 ? '✔️' : '❌'}
+                    <strong>${price.toFixed(2)}</strong> USD
                 </footer>
             `;
 
