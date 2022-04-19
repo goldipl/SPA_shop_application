@@ -46,29 +46,29 @@ export function Calculate() {
 
     const script =
     `<script>
-    const btnnNr1 = document.querySelector(".nr1");
-    const btnnNr2 = document.querySelector(".nr2");
-    const btnnNr3 = document.querySelector(".nr3");
-    const btnnNr4 = document.querySelector(".nr4");
-    const btnnNr5 = document.querySelector(".nr5");
-    const btnnNr6 = document.querySelector(".nr6");
-    const btnnNr7 = document.querySelector(".nr7");
-    const btnnNr8 = document.querySelector(".nr8");
-    const btnnNr9 = document.querySelector(".nr9");
-    const btnnNr0 = document.querySelector(".nr0");
-    const btnnNumbers = [btnnNr1, btnnNr2, btnnNr3, btnnNr4, btnnNr5, btnnNr6, btnnNr7, btnnNr8, btnnNr9, btnnNr0];
-    const btnnAC = document.querySelector(".btnn.ac");
-    const btnnDot = document.querySelector(".btnn.dot");
-    const calcDisplay = document.querySelector("input");
-    const btnnAdd = document.querySelector(".btnn.add");
-    const btnnSub = document.querySelector(".btnn.sub");
-    const btnnDiv = document.querySelector(".btnn.dv");
-    const btnnMlt = document.querySelector(".btnn.mlt");
-    const btnnEq = document.querySelector(".btnnEqual");
-    let value1 = '';
-    let value2 = '';
-    let result = '';
-    let operator = '';
+    var btnnNr1 = document.querySelector(".nr1");
+    var btnnNr2 = document.querySelector(".nr2");
+    var btnnNr3 = document.querySelector(".nr3");
+    var btnnNr4 = document.querySelector(".nr4");
+    var btnnNr5 = document.querySelector(".nr5");
+    var btnnNr6 = document.querySelector(".nr6");
+    var btnnNr7 = document.querySelector(".nr7");
+    var btnnNr8 = document.querySelector(".nr8");
+    var btnnNr9 = document.querySelector(".nr9");
+    var btnnNr0 = document.querySelector(".nr0");
+    var btnnNumbers = [btnnNr1, btnnNr2, btnnNr3, btnnNr4, btnnNr5, btnnNr6, btnnNr7, btnnNr8, btnnNr9, btnnNr0];
+    var btnnAC = document.querySelector(".btnn.ac");
+    var btnnDot = document.querySelector(".btnn.dot");
+    var calcDisplay = document.querySelector("input");
+    var btnnAdd = document.querySelector(".btnn.add");
+    var btnnSub = document.querySelector(".btnn.sub");
+    var btnnDiv = document.querySelector(".btnn.dv");
+    var btnnMlt = document.querySelector(".btnn.mlt");
+    var btnnEq = document.querySelector(".btnnEqual");
+    var value1 = '';
+    var value2 = '';
+    var result = '';
+    var operator = '';
     
     //getting number to display
     btnnNumbers.forEach(button => {
