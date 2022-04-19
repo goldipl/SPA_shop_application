@@ -28,7 +28,9 @@ export function Room(room) {
 
     article.innerHTML = `
         <h4>${name}</h4>
-        <p>Price: ${price} USD</p>
+        <p>Price: <strong>${price.toFixed(2)}</strong> USD</p>
+        ${price < 200 ? '⭐⭐' : '⭐⭐⭐'}
+        <br><br>
     `;
 
     article.append(AddToCartButton(room));
