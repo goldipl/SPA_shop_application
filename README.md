@@ -49,6 +49,11 @@ In the project directory, you can run following scripts:
 * JavaScript
 * Node, Express
 
+### Used Environment
+
+* [Netlify](https://www.netlify.com/)  
+* [my-json-server](https://my-json-server.typicode.com)
+
 ### Screenshots
 * desktop version screenshot  
 
