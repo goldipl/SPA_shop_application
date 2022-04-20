@@ -11,8 +11,13 @@ The project is a SPA Center dedicated to programmers written as a Single Page Ap
     - check-in date must be today date or later
     - check-out date must be maximum 1 year from today
 - User registering
+    - checking password length
+    - checking if inputs are filled
+    - checking registered users (used logins)
 - Calculating your funds
+    - handling dot error
 - Assuming your order
+    - checking if all required inputs are filled
 
 ### How to install?
 
