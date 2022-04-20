@@ -15,6 +15,7 @@ The project is a SPA Center dedicated to programmers written as a Single Page Ap
     - checking password length
     - checking if inputs are filled
     - checking registered users (used logins)
+    - show/hide your password
 - Calculating your funds
     - handling dot error
 - Assuming your order
