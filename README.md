@@ -21,6 +21,11 @@ The project is a SPA Center dedicated to programmers written as a Single Page Ap
 - Assuming your order
     - checking if all required inputs are filled
 
+### Application features:
+
+- using routing
+- using RWD
+
 ### How to install?
 
 If you wanna install this app for own, do following steps:
