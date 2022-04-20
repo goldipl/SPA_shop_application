@@ -56,6 +56,10 @@ In the project directory, you can run following scripts:
 * [Netlify](https://www.netlify.com/)  
 * [my-json-server](https://my-json-server.typicode.com)
 
+### Live link
+
+https://spa-shop-application.netlify.app/
+
 ### Screenshots
 * desktop version screenshot  
 
