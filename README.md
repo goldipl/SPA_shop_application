@@ -7,6 +7,7 @@ The project is a SPA Center dedicated to programmers written as a Single Page Ap
 - viewing the available treatments
 - viewing the available rooms and houses
 - adding treatments to the cart
+- adding rooms, houses to the cart
 - choosing check-in and check-out date
     - check-in date must be today date or later
     - check-out date must be maximum 1 year from today
