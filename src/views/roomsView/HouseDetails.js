@@ -18,7 +18,7 @@ export function HouseDetails(id) {
             const article = document.createElement('article');
 
             article.innerHTML = `
-                <h1>${name} ${price < 750 ? '⭐⭐⭐⭐' : '⭐⭐⭐⭐⭐'}</h1>
+                <h2 style="text-decoration: none !important">${name} ${price < 750 ? '⭐⭐⭐⭐' : '⭐⭐⭐⭐⭐'}</h2>
 
                 <hr>
                 <img src=${img} width=auto height=150></img>
