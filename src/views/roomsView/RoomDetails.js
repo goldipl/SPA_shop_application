@@ -24,8 +24,8 @@ export function RoomDetails(id) {
                 <img src=${img} width=auto height=150></img>
                 <p></p>
 
-                <p>${beds} x 🛏️</p>
-                <p>${guests} x 💁</p>
+                <p>${beds} x beds 🛏️</p>
+                <p>${guests} x guests 💁</p>
 
                 <p>${description}</p>
 

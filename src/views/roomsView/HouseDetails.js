@@ -24,10 +24,10 @@ export function HouseDetails(id) {
                 <img src=${img} width=auto height=150></img>
                 <p></p>
 
-                <p>${beds} x 🛏️</p>
-                <p>${guests} x 💁</p>
-                <p>${rooms} x 🚪</p>
-                <p>${bathrooms} x 🚽</p>
+                <p>${beds} x beds 🛏️</p>
+                <p>${guests} x guests 💁</p>
+                <p>${rooms} x rooms 🚪</p>
+                <p>${bathrooms} x bathrooms 🚽</p>
 
                 <p>${description}</p>
 
