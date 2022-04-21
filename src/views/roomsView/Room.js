@@ -31,7 +31,7 @@ export function Room(room) {
         <br><br>
         <h4>${name}</h4>
         <p>Price: <strong>${price.toFixed(2)}</strong> USD</p>
-        ${price < 200 ? '⭐⭐' : '⭐⭐⭐'}
+        ${price < 230 ? '⭐⭐' : '⭐⭐⭐'}
         <br><br>
     `;
 
