@@ -40,7 +40,7 @@ export function Cart() {
 
         tr.innerHTML = `
             <td>${item.name}</td>
-            <td>${item.price.toFixed(2)}</td>
+            <td>${item.price.toFixed(2)} USD</td>
             <td><img width=100 height=auto src=${item.img}></img></td>
             <td></td>
         `;
@@ -53,7 +53,7 @@ export function Cart() {
     const tableFooter = document.createElement('tr');
     tableFooter.innerHTML = `
         <td><strong>Total:</strong></td>
-        <td><strong> ${calculateTotal(cartItems)}</strong></td>
+        <td><strong> ${calculateTotal(cartItems)} USD 💰</strong></td>
         <td></td>
     `;
 
