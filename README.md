@@ -44,9 +44,9 @@ If you wanna install this app for own, do following steps:
 ### Available Scripts
 
 In the project directory, you can run following scripts:   
-`npm run start:db` - runs and load database    
-`npm run build` - builds the app for production   
-`npm run start:app` - runs the app in the development mode. Open http://localhost:1234 to view it in your browser. The page will reload when you make changes.
+* `npm run start:db` - runs and load database    
+* `npm run build` - builds the app for production   
+* `npm run start:app` - runs the app in the development mode. Open http://localhost:1234 to view it in your browser. The page will reload when you make changes.
 
 ### Used Technologies
 
