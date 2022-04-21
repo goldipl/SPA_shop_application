@@ -32,7 +32,7 @@ If you wanna install this app for own, do following steps:
 1. Use `git clone https://github.com/goldipl/SPA_shop_application.git` in your IDE (I'm programming in Visual Studio Code because I think it's the best option) using local folder on your computer
 2. Open terminal and type `npm run install` to install all dependencies (*important* - you must have [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [NodeJS](https://nodejs.org/en/) installed)  
 3. Change fetching paths in following js files from github to local version (there are commented code lines):
-    - Rooms.js -> use line `22` instead `20`   
+    - Rooms.js -> use line `22` instead `20` and `39` instead `37`    
     - Treatments.js -> use line `24` instead `22`   
     - HouseDetails.js -> use line `11` instead `13`  
     - RoomDetails.js -> use line `11` instead `13`   
