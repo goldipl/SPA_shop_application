@@ -15,6 +15,7 @@ const navigationItems = [
     { component: Cart, name: 'Cart 🛒 & Reservation 🔑' },
     { component: LoginSignup, name: 'Log in / Sign up 🔒' },
     { component: Calculate, name: 'Calculate Your Funds 💰' },
+    { name: 'Cart Quantity 🔢' },
 ];
 
 

@@ -3,6 +3,9 @@ import './it-spa.scss';
 import { Rooms } from './views/roomsView/Rooms';
 import { Treatments } from './views/treatmentsView/Treatments';
 import { Navigation } from './navigation/Navigation';
+import { CartQuantity } from './cart/CartQuantity';
+
+window.onload = CartQuantity;
 
 const main = document.querySelector('main');
 
