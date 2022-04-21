@@ -4,27 +4,28 @@ The project is a SPA Center dedicated to programmers written as a Single Page Ap
 
 ### Using this application you can:
 
-- viewing the available treatments
-- viewing the available rooms and houses
-- adding treatments to the cart
-- adding rooms, houses to the cart
-- choosing check-in and check-out date
+- Check the available treatments
+- Check the available rooms and houses
+- Add treatments to the cart
+- Add rooms, houses to the cart
+- Choose check-in and check-out date
     - check-in date must be today date or later
     - check-out date must be maximum 1 year from today
-- User registering
-    - checking password length
-    - checking if inputs are filled
-    - checking registered users (used logins)
+- Register users and also:
+    - check password length
+    - check if inputs are filled
+    - check registered users (used logins)
     - show/hide your password
-- Calculating your funds
-    - handling dot error
+- Calculate your funds
+    - handle dot error also
 - Summary your order
-    - checking if all required inputs are filled
+    - check if all required inputs are filled too
+- Check the amount of items in the cart using navbar button titled `Cart Quantity 🔢`
 
-### Application features:
+### Application extra features:
 
 - using routing
-- using RWD
+- using Responsive Web Design
 
 ### How to install?
 
