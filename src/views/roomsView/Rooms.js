@@ -33,7 +33,10 @@ export function Rooms() {
             section.append(div);
         });
 
-        fetch('http://localhost:3000/houses')
+    // Live - Github Version
+    // fetch('https://my-json-server.typicode.com/goldipl/SPA_shop_application/houses')
+    // Local version
+    fetch('http://localhost:3000/houses')
         .then(response => response.json())
         .then(houses => {
             const h2 = document.createElement('h2');
