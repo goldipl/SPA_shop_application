@@ -1,5 +1,5 @@
 import { BackButton } from '../../common/BackButton';
-import { Rooms } from './Rooms';
+import { Houses } from '../housesView/Houses';
 
 export function HouseDetails(id) {
     const section = document.createElement('section');
@@ -37,7 +37,7 @@ export function HouseDetails(id) {
             `;
 
             section.querySelector('#loading').remove();
-            section.append(article, BackButton(Rooms));
+            section.append(article, BackButton(Houses));
         });
 
     return section;

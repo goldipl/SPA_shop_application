@@ -1,5 +1,4 @@
 import {Room} from "./Room";
-import {House} from "./House";
 import {Router} from "../../router/Router";
 
 export function Rooms() {
@@ -31,25 +30,6 @@ export function Rooms() {
 
             section.querySelector('#loading').remove();
             section.append(div);
-        });
-
-    // Live - Github Version
-    // fetch('https://my-json-server.typicode.com/goldipl/SPA_shop_application/houses')
-    // Local version
-    fetch('http://localhost:3000/houses')
-        .then(response => response.json())
-        .then(houses => {
-            const h2 = document.createElement('h2');
-            h2.innerText = "Houses";
-            const div2 = document.createElement('div');
-            div2.classList.add("housesContainer");
-
-            const lis = houses.map(house => House(house));
-
-            div2.append(...lis);
-
-            section.append(h2); 
-            section.append(div2); 
         });
  
     return section;
