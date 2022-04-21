@@ -20,7 +20,7 @@ The project is a SPA Center dedicated to programmers written as a Single Page Ap
     - handle dot error also
 - Summary your order
     - check if all required inputs are filled too
-- Check the amount of items in the cart using navbar button titled `Cart Quantity 🔢`
+- Check the amount of items in the cart using mouse enter navbar button titled `Cart Quantity 🔢`
 
 ### Application extra features:
 
