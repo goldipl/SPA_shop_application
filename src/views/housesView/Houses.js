@@ -1,4 +1,4 @@
-import {House} from "../housesView/House";
+import {House} from "./House";
 import {Router} from "../../router/Router";
 
 export function Houses() {
