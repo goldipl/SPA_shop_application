@@ -37,7 +37,7 @@ function SignUpButton() {
         // Checking passwords length 
         if ((passInputValue.length < 10) && (passInputValue.length > 0) && (textInputValue.length !== 0))  {
             const shortPassword = `Password too short! Must be minimum 10 characters 😡`;
-            divPassShort = document.createElement('div');
+            const divPassShort = document.createElement('div');
             divPassShort.innerHTML = shortPassword;
             divPassShort.style.color = "red";
             loginSection.append(divPassShort);
@@ -68,19 +68,19 @@ function SignUpButton() {
         //Checking when inputs are filled || empty
         if ((passInputValue.length === 0) && (textInputValue.length === 0)) {
             const emptyInputsMessage = `Fill Password & Login input ⚠️`;
-            divContainer = document.createElement('div');
+            const divContainer = document.createElement('div');
             divContainer.innerHTML = emptyInputsMessage;
             divContainer.style.color = "red";
             loginSection.append(divContainer);
         } else if ((passInputValue.length !== 0) && (textInputValue.length === 0)) {
             const emptyInputsMessage = `Fill Login input ⚠️`;
-            divContainer = document.createElement('div');
+            const divContainer = document.createElement('div');
             divContainer.innerHTML = emptyInputsMessage;
             divContainer.style.color = "red";
             loginSection.append(divContainer);
         } else if ((passInputValue.length === 0) && (textInputValue.length !== 0)) {
             const emptyInputsMessage = `Fill Password input ⚠️`;
-            divContainer = document.createElement('div');
+            const divContainer = document.createElement('div');
             divContainer.innerHTML = emptyInputsMessage;
             divContainer.style.color = "red";
             loginSection.append(divContainer);
