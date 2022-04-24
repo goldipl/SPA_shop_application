@@ -19,3 +19,12 @@ section.homePage {
         font-size: 24px; 
     }
 }
+
+@media (max-width: 600px) {
+    section.homePage {
+        img {
+            border: 3px dashed #ffc720;
+            width: 60vw;
+        }
+    }
+}
