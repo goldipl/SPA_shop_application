@@ -17,6 +17,7 @@ export function Homepage() {
 
     sectionHomepage.innerHTML = `
     <h2 class="homepageTitle">Welcome to our homepage</h2>
+    <img src="https://images.pexels.com/photos/2373201/pexels-photo-2373201.jpeg" width=600 height=auto><br><br>
     <p>Our SPA offers multiple places to rest</p>
     `;
 
