@@ -19,9 +19,9 @@ export function Treatments() {
   `;
 
     // Live - Github Version
-    // fetch('https://my-json-server.typicode.com/goldipl/SPA_shop_application/treatments')
+    fetch('https://my-json-server.typicode.com/goldipl/SPA_shop_application/treatments')
     // Local version
-    fetch('http://localhost:3000/treatments')
+    // fetch('http://localhost:3000/treatments')
         .then(response => response.json())
         .then(treatments => {
             const treatmentsContainer = document.createElement('div');

@@ -8,9 +8,9 @@ export function HouseDetails(id) {
         <p id="loading">Loading...</p>
     `;
     // Local version
-    fetch(`http://localhost:3000/houses/${id}`)
+    // fetch(`http://localhost:3000/houses/${id}`)
     // Live - Github Version
-    // fetch(`https://my-json-server.typicode.com/goldipl/SPA_shop_application/houses/${id}`)
+    fetch(`https://my-json-server.typicode.com/goldipl/SPA_shop_application/houses/${id}`)
         .then(response => response.json())
         .then(house => {
             const { name, beds, guests, price, description, img, rooms, bathrooms } = house;

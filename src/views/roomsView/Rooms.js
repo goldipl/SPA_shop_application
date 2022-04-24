@@ -16,9 +16,9 @@ export function Rooms() {
         <p id="loading">Loading...</p>
     `;
     // Live - Github Version
-    // fetch('https://my-json-server.typicode.com/goldipl/SPA_shop_application/rooms')
+    fetch('https://my-json-server.typicode.com/goldipl/SPA_shop_application/rooms')
     // Local version
-    fetch('http://localhost:3000/rooms')
+    // fetch('http://localhost:3000/rooms')
         .then(response => response.json())
         .then(rooms => {
             const div = document.createElement('div');
