@@ -1,6 +1,14 @@
-.homepageTitle {
+section.homePage {
     text-align: center;
-    font-family: "Lobster", cursive;
-    text-decoration: none;
-    font-size: 48px;
+    .homepageTitle {
+        text-align: center;
+        font-family: "Lobster", cursive;
+        text-decoration: none;
+        font-size: 48px; 
+    }
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
