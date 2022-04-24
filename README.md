@@ -24,8 +24,14 @@ The project is a SPA Center dedicated to programmers written as a Single Page Ap
 
 ### Application extra features:
 
-- using routing
-- using Responsive Web Design
+- using routing  
+- using Responsive Web Design  
+- translating page section, available languages: 
+    - French
+    - English
+    - German
+    - Russian
+    - Polish
 
 ### How to install?
 
