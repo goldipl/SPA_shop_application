@@ -6,7 +6,7 @@ export function AddToCartButton(item) {
     button.classList.add('btn', 'btn-info');
     button.style.marginBottom = '1em';
     button.style.marginRight = '1em';
-    button.innerText = '🛒';
+    button.innerText = 'Add to 🛒';
 
     button.addEventListener('click', () => {
         cartManager.add(item);
