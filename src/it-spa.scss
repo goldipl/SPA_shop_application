@@ -33,7 +33,7 @@ body {
     }
 }
 
-footer {
+footer.footer {
     background-color: #0d6efd;
     padding: 1em 0;
     div,
@@ -61,11 +61,5 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-    }
-}
-
-.treatmentContainer {
-    footer {
-        background-color: rgba(255,255,255,0);
     }
 }
