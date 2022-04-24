@@ -12,7 +12,26 @@
 
 <body>
   <main></main>
-  <p class="text-muted">Copyright © IT SPA. All rights reserved.</p>
+  <footer>
+    <div class="footerContainer">
+      <div class="footerContainer_translate">
+        <span class="mainText">Translate page:</span>
+        <div id="google_translate_element"></div>
+      </div>
+      <div class="footerContainer_contact">
+        <span class="mainText">Contact:</span>
+        <p>tel. xxx-xxx-xxx</p>
+        <p>e-mail: mail@mail.com</p>
+      </div>
+    </div>
+    <p class="text-muted">Copyright © IT SPA. All rights reserved.</p>
+  </footer>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'fr,en,de,ru,pl'}, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <script type="module" src="src/it-spa.js"></script>
 </body>
 

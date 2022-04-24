@@ -32,3 +32,40 @@ body {
         margin-left: 0 !important;
     }
 }
+
+footer {
+    background-color: #0d6efd;
+    padding: 1em 0;
+    div,
+    span {
+    color: #FFFFFF;
+    }
+    .goog-te-gadget,
+    .goog-logo-link {
+        color: #FFFFFF !important;
+    }
+    span.mainText {
+        font-weight: 600;
+        color: #ffbf1e;
+        margin-bottom: 8px;
+    }
+    p {
+        margin: 0;
+    }
+    p.text-muted {
+        color: #FFFFFF !important;
+        text-align: center;
+        margin-top: 8px;
+    }
+    .footerContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.treatmentContainer {
+    footer {
+        background-color: rgba(255,255,255,0);
+    }
+}
