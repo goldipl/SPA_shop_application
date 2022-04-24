@@ -6,11 +6,13 @@ import { LoginSignup } from '../views/loginSignupView/LoginSignup';
 import { Calculate } from '../views/calculateView/Calculate';
 import './navigation.scss';
 import { Houses } from '../views/housesView/Houses';
+import { Homepage } from '../views/homepageView/Homepage';
 
 
 // tablica zawiera elementy menu do pokazania na stronie
 const navigationItems = [
     //      jaki widok, tekst na guziku
+    { component: Homepage, name: 'Homepage 🍃' },
     { component: Rooms, name: 'Rooms 🚪' },
     { component: Houses, name: 'Houses 🏠' },
     { component: Treatments, name: 'Treatments 💊' },
