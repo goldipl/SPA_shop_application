@@ -33,7 +33,7 @@ The project is a SPA Center dedicated to programmers written as a Single Page Ap
     - Russian
     - Polish
 - main page with navigation buttons 
-- script which can set the current year in footer
+- script displaying the current year in footer
 
 ### How to install?
 
