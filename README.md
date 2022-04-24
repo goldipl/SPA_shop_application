@@ -32,6 +32,7 @@ The project is a SPA Center dedicated to programmers written as a Single Page Ap
     - German
     - Russian
     - Polish
+- main page with navigation buttons 
 
 ### How to install?
 
