@@ -1,4 +1,5 @@
 import {Router} from "../../router/Router";
+import "./homepage.scss";
 
 export function Homepage() {
 
@@ -13,7 +14,7 @@ export function Homepage() {
     // ----- My own routing ----- end
 
     sectionHomepage.innerHTML = `
-    <h2>Welcome to our homepage</h2>
+    <h2 class="homepageTitle">Welcome to our homepage</h2>
     `;
 
     return sectionHomepage;
