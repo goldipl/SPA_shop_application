@@ -24,8 +24,7 @@ export function Homepage() {
     function RoomsButton() {
         const roomsButton = document.createElement('button');
         roomsButton.setAttribute('type', 'button');
-        roomsButton.innerText = 'Rooms';
-        roomsButton.innerHTML = `<img src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg" width="auto" height="150">`;
+        roomsButton.innerHTML = `<div><img src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg" width="auto" height="150">Rooms</div>`;
         roomsButton.classList.add('btn', 'btn-primary');
         roomsButton.style.marginBottom = '1em';
         roomsButton.style.fontFamily = "Merriweather";
@@ -47,7 +46,7 @@ export function Homepage() {
     function HousesButton() {
         const housesButton = document.createElement('button');
         housesButton.setAttribute('type', 'button');
-        housesButton.innerText = 'Houses';
+        housesButton.innerHTML = `<div><img src="https://images.pexels.com/photos/208736/pexels-photo-208736.jpeg" width="auto" height="150">Houses</div>`;
         housesButton.classList.add('btn', 'btn-warning');
         housesButton.style.marginBottom = '1em';
         housesButton.style.fontFamily = "Merriweather";
