@@ -17,7 +17,7 @@ export function Homepage() {
     // ----- My own routing ----- end
 
     sectionHomepage.innerHTML = `
-    <img src="../../../src/images/backgroundimage.jpg" width=100vw height=30vh><br><br>
+    <img class="bigImage" src="../../../src/images/backgroundimage.jpg" width=100vw height=30vh><br><br>
     <h2 class="homepageTitle">Welcome to our homepage</h2>
     <p>Our SPA offers multiple places to rest</p>
     `;
