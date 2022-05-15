@@ -112,7 +112,7 @@ justify-content: space-evenly;">
 <br>
             <div class="flex290">
                 <button type="submit" class="button btn-primary mB8px">Confirm Booking</button>
-                <button type="reset" class="button btn-warning">Reset</button>
+                <button type="reset" class="button btn-winfo">Reset</button>
             </div></div>
         </form>
     </div>
