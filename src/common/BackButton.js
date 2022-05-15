@@ -1,7 +1,7 @@
 export function BackButton(Component) {
    const button = document.createElement('button');
     button.setAttribute('type', 'button');
-    button.classList.add('btn', 'btn-success');
+    button.classList.add('btn', 'btn-primary');
     button.style.margin = '1em 0';
     button.innerText = 'Back';
 
