@@ -37,7 +37,7 @@ export function Navigation() {
 
     nav.innerHTML = `
     <div class="logoSPAText" style="text-align: center;margin-bottom: 16px;">SPA<span>Center</span>
-    <span class="text" style="font-size: 12px;position: absolute;top: 54px;left: 0;right: 0;margin-left: 14px;">Spend your free time with us</span></div>
+    <span class="text" style="font-size: 12px;position: absolute;top: 62px;left: 0;right: 0;margin-left: 14px;">Spend your free time with us</span></div>
     `;
 
     nav.append(...navigationButtons);
