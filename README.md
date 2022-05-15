@@ -1,4 +1,4 @@
-## IT SPA - ALK Studies Project
+## IT SPA Center - ALK Studies Project
 
 The project is a SPA Center dedicated to programmers written as a Single Page Application using Vanilla Javascript and Node.JS as a primary technologies (styled with SCSS/CSS3).
 
@@ -73,7 +73,7 @@ In the project directory, you can run following scripts:
 
 ### Live link
 
-https://spa-shop-application.netlify.app/
+https://it-spa-center.netlify.app
 
 ### Screenshots
 * desktop version screenshot  
