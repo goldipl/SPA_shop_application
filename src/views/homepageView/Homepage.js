@@ -47,7 +47,7 @@ export function Homepage() {
         const housesButton = document.createElement('button');
         housesButton.setAttribute('type', 'button');
         housesButton.innerHTML = `<div><img src="https://images.pexels.com/photos/208736/pexels-photo-208736.jpeg" width="auto" height="150">Houses</div>`;
-        housesButton.classList.add('btn', 'btn-warning');
+        housesButton.classList.add('btn', 'btn-primary');
         housesButton.style.marginBottom = '1em';
         housesButton.style.fontFamily = "Merriweather";
         housesButton.style.fontSize = "24px";
