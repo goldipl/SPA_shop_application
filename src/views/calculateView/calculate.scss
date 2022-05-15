@@ -1,8 +1,15 @@
+.calculateSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .calcView {
     display: block;
     width: 240px;
     z-index: 99;
     border-left: none;
+    background-color: #edc2a754;
 }
 
 .calcDisplay {
@@ -11,8 +18,9 @@
     font-size: 36px;
     line-height: 60px;
     text-align: right;
-    background-color: aquamarine;
+    background-color: #9bf9f7;
     border: 0;
+    pointer-events: none;
 }
 
 .btnn,
@@ -20,7 +28,7 @@
     display: block;
     width: 60px;
     height: 60px;
-    background-color: azure;
+    background-color: #edc2a754;
     border: none;
     font-size: 24px;
 }
@@ -29,7 +37,7 @@
     display: block;
     width: 60px;
     height: 240px;
-    background-color: azure;
+    background-color: #edc2a754;
     border: none;
     font-size: 24px;
 }
@@ -47,4 +55,10 @@ button {
 
 button:active {
     transform: scale(1.05);
+}
+
+.btnn:hover,
+.btnnNr:hover,
+.btnnEqual:hover {
+    background-color: #edc2a7;
 }

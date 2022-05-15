@@ -148,6 +148,7 @@ export function Calculate() {
     </script>`;
 
     const scriptCalc = document.createRange().createContextualFragment(script);
+    section.classList.add("calculateSection");
     section.append(scriptCalc);
 
     return section;
