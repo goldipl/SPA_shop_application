@@ -71,8 +71,12 @@ footer.footer {
     color: #000000 !important;
 }
 
-.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: none !important;
+.btn-check:active+.btn-primary:focus, 
+.btn-check:checked+.btn-primary:focus, 
+.btn-primary.active:focus, .btn-primary:active:focus, 
+.show>.btn-primary.dropdown-toggle:focus,
+.btn:focus {
+    box-shadow: 0 0 0 0.25rem #edc2a7;
 }
 
 .btn-info {
@@ -86,4 +90,28 @@ footer.footer {
     border-color: #edc2a7 !important;
     color: #000 !important;
     font-weight: 600 !important;
+}
+
+nav .btn-primary {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+}
+
+nav .btn-primary:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav .btn-primary:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
