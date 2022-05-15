@@ -132,18 +132,19 @@ nav .btn-primary:hover:after {
     flex-direction: column;
 }
 
-@media (max-width: 600px) {
-.btn.hero-buttons {
-    margin-right: 0;
-    }
-}
-
 .homePage .bigImage {
-	position: relative;
-    margin-left: -16px;
-    width: calc(100vw - 16px);
+    width: 100vw;
     border-radius: 0;
     height: 30vh;
-    margin-top: -16px;
+    margin: 0 -16px 0 -16px;
     box-shadow: 18px 18px 36px -12px #edc2a7;
+}
+
+@media (max-width: 600px) {
+    .btn.hero-buttons {
+        margin-right: 0;
+    }
+    .homePage .bigImage {
+        height: 20vh;
+    }
 }
