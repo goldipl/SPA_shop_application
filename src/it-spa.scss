@@ -8,9 +8,20 @@ body {
         h2 {
             font-family: "Merriweather", serif;
             padding-bottom: 8px;
-            text-decoration: underline;
             text-align: center;
             margin-top: 16px;
+            font-weight: 600;
+            &::after {
+                display: block;
+                content: '';
+                width: 60px;
+                height: 8px;
+                background: #edc2a7;
+                position: absolute;
+                bottom: 4px;
+                left: 0;
+                z-index: -1;
+            }
         }
     }
     p.text-muted {
