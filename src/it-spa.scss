@@ -70,3 +70,20 @@ footer.footer {
     border-color: #edc2a7 !important;
     color: #000000 !important;
 }
+
+.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none !important;
+}
+
+.btn-info {
+    background-color: #FFFFFF !important;
+    border-color: #edc2a7 !important;
+    color: #000 !important;
+}
+
+.btn-check:focus+.btn-info, .btn-info:focus, .btn-info:hover {
+    background-color: inherit !important;
+    border-color: #edc2a7 !important;
+    color: #000 !important;
+    font-weight: 600 !important;
+}
