@@ -14,10 +14,16 @@ button {
 }
 
 @media (max-width: 950px) {
-	div.form_container form#booking>div {
-		flex-direction: column;
-	}
-	div.form_container form#booking>div .div.flex290 {
-		width: 90vw;
-	}
+    div.form_container form#booking > div .flex290 {
+        width: 45% !important;
+    }
+    div.form_container form#booking > div {
+        flex-wrap: wrap !important;
+    }
+}
+
+@media (max-width: 600px) {
+    div.form_container form#booking > div .flex290 {
+        width: 90% !important;
+    }
 }
