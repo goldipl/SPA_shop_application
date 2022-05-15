@@ -2,6 +2,7 @@ import {Router} from "../../router/Router";
 import "./homepage.scss";
 import { Rooms } from '../roomsView/Rooms';
 import { Houses } from '../housesView/Houses';
+import { Treatments } from '../treatmentsView/Treatments';
 
 export function Homepage() {
 
@@ -24,7 +25,9 @@ export function Homepage() {
     function RoomsButton() {
         const roomsButton = document.createElement('button');
         roomsButton.setAttribute('type', 'button');
-        roomsButton.innerHTML = `<div><img src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg" width="auto" height="150">Rooms</div>`;
+        roomsButton.innerHTML = `
+            <div style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
+            <img src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg" width="auto" height="150">Rooms</div>`;
         roomsButton.classList.add('btn', 'btn-primary');
         roomsButton.style.marginBottom = '1em';
         roomsButton.style.fontFamily = "Merriweather";
@@ -46,7 +49,9 @@ export function Homepage() {
     function HousesButton() {
         const housesButton = document.createElement('button');
         housesButton.setAttribute('type', 'button');
-        housesButton.innerHTML = `<div><img src="https://images.pexels.com/photos/208736/pexels-photo-208736.jpeg" width="auto" height="150">Houses</div>`;
+        housesButton.innerHTML = `
+            <div style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
+            <img src="https://images.pexels.com/photos/208736/pexels-photo-208736.jpeg" width="auto" height="150">Houses</div>`;
         housesButton.classList.add('btn', 'btn-primary');
         housesButton.style.marginBottom = '1em';
         housesButton.style.fontFamily = "Merriweather";
@@ -64,8 +69,41 @@ export function Homepage() {
         return housesButton;
     }
 
+    function TreatmentsInfoText() {
+        const treatmentsInfoText = document.createElement('p');
+        treatmentsInfoText.innerText = `
+            We also have a lot treatments in our offer. Check it out.
+        `;
+        return treatmentsInfoText;
+    };
+    
+    function TreatmentsButton() {
+        const treatmentsButton = document.createElement('button');
+        treatmentsButton.setAttribute('type', 'button');
+        treatmentsButton.innerHTML = `
+            <div style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
+            <img src="https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg" width="auto" height="150">Treatments</div>`;
+        treatmentsButton.classList.add('btn', 'btn-primary');
+        treatmentsButton.style.marginBottom = '1em';
+        treatmentsButton.style.fontFamily = "Merriweather";
+        treatmentsButton.style.fontSize = "24px";
+        treatmentsButton.style.borderRadius = "24px";
+    
+        const navigateEventToTreatments = new CustomEvent('navigate', {
+            detail: () => Treatments()
+        });
+    
+        treatmentsButton.addEventListener('click', () => {
+            document.body.dispatchEvent(navigateEventToTreatments);
+        });
+    
+        return treatmentsButton;
+    }
+
     sectionHomepage.append(RoomsButton());
     sectionHomepage.append(HousesButton());
+    sectionHomepage.append(TreatmentsInfoText());
+    sectionHomepage.append(TreatmentsButton());
 
     return sectionHomepage;
 
