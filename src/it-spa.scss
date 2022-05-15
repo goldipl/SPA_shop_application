@@ -115,3 +115,14 @@ nav .btn-primary:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+.btn.hero-buttons:hover {
+    border: 1px solid #000000;
+}
+
+.btn.hero-buttons div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

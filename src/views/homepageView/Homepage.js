@@ -26,9 +26,8 @@ export function Homepage() {
         const roomsButton = document.createElement('button');
         roomsButton.setAttribute('type', 'button');
         roomsButton.innerHTML = `
-            <div style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
-            <img src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg" width="auto" height="150">Rooms</div>`;
-        roomsButton.classList.add('btn', 'btn-primary');
+            <div><img src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg" width="auto" height="150">Rooms</div>`;
+        roomsButton.classList.add('btn', 'btn-primary', 'hero-buttons');
         roomsButton.style.marginBottom = '1em';
         roomsButton.style.fontFamily = "Merriweather";
         roomsButton.style.fontSize = "24px";
@@ -50,9 +49,8 @@ export function Homepage() {
         const housesButton = document.createElement('button');
         housesButton.setAttribute('type', 'button');
         housesButton.innerHTML = `
-            <div style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
-            <img src="https://images.pexels.com/photos/208736/pexels-photo-208736.jpeg" width="auto" height="150">Houses</div>`;
-        housesButton.classList.add('btn', 'btn-primary');
+            <div><img src="https://images.pexels.com/photos/208736/pexels-photo-208736.jpeg" width="auto" height="150">Houses</div>`;
+        housesButton.classList.add('btn', 'btn-primary', 'hero-buttons');
         housesButton.style.marginBottom = '1em';
         housesButton.style.fontFamily = "Merriweather";
         housesButton.style.fontSize = "24px";
@@ -81,9 +79,8 @@ export function Homepage() {
         const treatmentsButton = document.createElement('button');
         treatmentsButton.setAttribute('type', 'button');
         treatmentsButton.innerHTML = `
-            <div style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
-            <img src="https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg" width="auto" height="150">Treatments</div>`;
-        treatmentsButton.classList.add('btn', 'btn-primary');
+            <div><img src="https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg" width="auto" height="150">Treatments</div>`;
+        treatmentsButton.classList.add('btn', 'btn-primary', 'hero-buttons');
         treatmentsButton.style.marginBottom = '1em';
         treatmentsButton.style.fontFamily = "Merriweather";
         treatmentsButton.style.fontSize = "24px";
