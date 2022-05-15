@@ -116,8 +116,12 @@ nav .btn-primary:hover:after {
     transform-origin: bottom left;
 }
 
+.btn.hero-buttons {
+    transition: 0.6s;
+}
+
 .btn.hero-buttons:hover {
-    border: 1px solid #000000;
+    box-shadow: 0px 0px 35px -12px rgba(66, 68, 90, 1);
 }
 
 .btn.hero-buttons div {
@@ -125,4 +129,10 @@ nav .btn-primary:hover:after {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+@media (max-width: 600px) {
+.btn.hero-buttons {
+    margin-right: 0;
+    }
 }
