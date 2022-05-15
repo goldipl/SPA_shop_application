@@ -5,9 +5,11 @@ body {
     main {
         padding: 0 16px 16px 16px;
         h2 {
-            font-family: 'Merriweather', serif;
+            font-family: "Merriweather", serif;
             padding-bottom: 8px;
             text-decoration: underline;
+            text-align: center;
+            margin-top: 16px;
         }
     }
     p.text-muted {
@@ -88,10 +90,9 @@ footer.footer {
 }
 
 .btn-check:focus+.btn-info, .btn-info:focus, .btn-info:hover {
-    background-color: inherit !important;
+    background-color: #edc2a74d !important;
     border-color: #edc2a7 !important;
     color: #000 !important;
-    font-weight: 600 !important;
 }
 
 nav .btn-primary {
