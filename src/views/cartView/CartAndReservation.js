@@ -65,56 +65,57 @@ export function Cart() {
     personal.classList.add('personalInfo');
     personal.innerHTML = `
         <h2>Reservation</h2>
-        <div style="display: flex;justify-content: space-evenly;">
-        <div class="flex290">
-           <strong><label for="guestname" class="field-label">Please Enter Your Name</label></strong>
-           <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="Martin">                               
-        </div>
-        <div class="flex290">
-           <strong><label for="guestsurname" class="field-label">Please Enter Your Surame</label></strong>
-           <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="Kowalsky">                               
-        </div>
-        <div class="flex290">
-           <strong><label for="guestemail" class="field-label">Email Address</label></strong>
-           <input type="email" name="guestemail" id="guestemail" class="gui-input" required="" placeholder="mkowalsky@xyz.com">
-        </div>
-        <div class="flex290">
-           <strong><label for="guestelephone" class="field-label">Mobile Number</label></strong>
-           <input type="text" name="guestelephone" id="guestelephone" class="gui-input" required="" placeholder="Mobile Number"> 
-        </div>
-     </div>
-     <div style="display: flex;
-        justify-content: space-evenly;">
-        <div class="flex290">
-           <strong><label for="adults" class="field-label">Number of Adults</label></strong>
-           <input type="number" id="adults" name="adults" class="gui-input" required="" placeholder="Number of adults">
-        </div>
-        <div class="flex290">
-           <strong><label for="children" class="field-label">Number of Children</label></strong>
-           <input type="number" id="children" name="children" class="gui-input" required="" placeholder="Number of children">
-        </div>
-        <div class="flex290">
-           <strong><label for="checkin" class="field-label">Check-in Date</label></strong>
-           <input type="date" id="dateInputMin" name="trip-start" required="" min="2022-05-15">
-        </div>
-        <div class="flex290">
-           <strong><label for="checkout" class="field-label">Check-out Date</label></strong>
-           <input type="date" id="dateInputMax" name="trip-end" required="" max="2023-05-15">
-        </div>
-     </div>
-     <div style="display: flex;flex-direction: column;align-items: center;">
-        <div class="flex290" style="width: 90vw;">
-           <strong>Extra info:</strong>
-           <textarea class="gui-textarea" id="comment" name="comment" placeholder="Place to inform us about special needs" style="height: 80px;"></textarea>
-        </div>
-        <br>
-        <div class="flex290">
-           <button type="submit" class="button btn-primary mB8px">Confirm Booking</button>
-           <button type="reset" class="button btn-warning">Reset</button>
-        </div>
-     </div>
-     </form>
-     </div>
+        <div class="form_container">
+        <form method="post" action="/" id="booking">
+<div style="display: flex;justify-content: space-evenly;">
+            <div class="flex290">
+                <strong><label for="guestname" class="field-label">Please Enter Your Name</label></strong>
+                <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="Martin">                               
+            </div>
+            <div class="flex290">
+            <strong><label for="guestsurname" class="field-label">Please Enter Your Surame</label></strong>
+            <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="Kowalsky">                               
+            </div>
+            <div class="flex290">
+                <strong><label for="guestemail" class="field-label">Email Address</label></strong>
+                <input type="email" name="guestemail" id="guestemail" class="gui-input" required="" placeholder="mkowalsky@xyz.com">
+            </div>
+            <div class="flex290">
+                <strong><label for="guestelephone" class="field-label">Mobile Number</label></strong>
+                <input type="text" name="guestelephone" id="guestelephone" class="gui-input" required="" placeholder="Mobile Number"> 
+            </div>
+    </div>
+<div style="display: flex;
+justify-content: space-evenly;">
+            <div class="flex290">
+                <strong><label for="adults" class="field-label">Number of Adults</label></strong>
+                <input type="number" id="adults" name="adults" class="gui-input" required="" placeholder="Number of adults">
+            </div>
+            <div class="flex290">
+                <strong><label for="children" class="field-label">Number of Children</label></strong>
+                <input type="number" id="children" name="children" class="gui-input" required="" placeholder="Number of children">
+            </div>
+            <div class="flex290">
+                <strong><label for="checkin" class="field-label">Check-in Date</label></strong>
+                <input type="date" id="dateInputMin" name="trip-start" required="" min="2022-05-15">
+            </div>
+            <div class="flex290">
+                <strong><label for="checkout" class="field-label">Check-out Date</label></strong>
+                <input type="date" id="dateInputMax" name="trip-end" required="" max="2023-05-15">
+            </div>
+    </div>
+<div style="display: flex;flex-direction: column;align-items: center;">
+            <div class="flex290" style="width: 90vw;">
+                <strong>Extra info:</strong>
+                <textarea class="gui-textarea" id="comment" name="comment" placeholder="Place to inform us about special needs" style="height: 80px;"></textarea>
+            </div>
+<br>
+            <div class="flex290">
+                <button type="submit" class="button btn-primary mB8px">Confirm Booking</button>
+                <button type="reset" class="button btn-warning">Reset</button>
+            </div></div>
+        </form>
+    </div>
     `;
 
     const scriptTripStart =
