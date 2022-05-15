@@ -70,7 +70,7 @@ export function Homepage() {
     function TreatmentsInfoText() {
         const treatmentsInfoText = document.createElement('p');
         treatmentsInfoText.innerText = `
-            We also have a lot treatments in our offer. Check it out.
+            We also have a lot of treatments in our offer. Check it out.
         `;
         return treatmentsInfoText;
     };
