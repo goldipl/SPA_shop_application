@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 nav {
-    background-color: #0d6efd;
+    background-color: #edc2a7;
     margin-bottom: 16px;
+    padding: 16px;
     .active-btn {
         border-bottom: 4px solid #000000 !important;
         border-radius: 0 !important;
@@ -9,11 +10,17 @@ nav {
 }
 
 .logoSPAText {
-    font-family: 'Lobster', cursive;
+    font-family: 'Merriweather', serif;
     color: #FFFFFF;
     font-size: 32px;
     margin-left: 16px;
     span {
         color: rgb(255, 191, 30);
     }
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus, .btn-primary:hover {
+    background-color: rgba(255,255,255,0);
+    border-color: #000000;
+    color: #000000;
 }

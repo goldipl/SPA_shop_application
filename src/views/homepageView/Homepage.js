@@ -27,7 +27,7 @@ export function Homepage() {
         roomsButton.innerText = '🡺 Rooms 🡸';
         roomsButton.classList.add('btn', 'btn-primary');
         roomsButton.style.marginBottom = '1em';
-        roomsButton.style.fontFamily = "Lobster";
+        roomsButton.style.fontFamily = "Merriweather";
         roomsButton.style.fontSize = "24px";
         roomsButton.style.marginRight = "16px";
     
@@ -48,7 +48,7 @@ export function Homepage() {
         housesButton.innerText = '🡺 Houses 🡸';
         housesButton.classList.add('btn', 'btn-warning');
         housesButton.style.marginBottom = '1em';
-        housesButton.style.fontFamily = "Lobster";
+        housesButton.style.fontFamily = "Merriweather";
         housesButton.style.fontSize = "24px";
     
         const navigateEventToHouses = new CustomEvent('navigate', {

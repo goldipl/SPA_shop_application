@@ -1,7 +1,11 @@
 article {
-    margin: 0.5em 0;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    margin: .5em 0;
     padding: 1em 2em;
-    background-color: rgb(13 110 253 / 10%);
+    -webkit-box-shadow: 5px 5px 30px -12px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 5px 5px 30px -12px rgba(66, 68, 90, 1);
+    box-shadow: 5px 5px 30px -12px rgba(66, 68, 90, 1);
 }
 
 .treatmentsSection h2 {

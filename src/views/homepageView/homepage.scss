@@ -2,7 +2,7 @@ section.homePage {
     text-align: center;
     .homepageTitle {
         text-align: center;
-        font-family: "Lobster", cursive;
+        font-family: 'Merriweather', serif;
         text-decoration: none;
         font-size: 48px; 
     }
@@ -12,10 +12,11 @@ section.homePage {
         justify-content: center;
     }
     img {
-        border: 6px dashed #ffc720;
+        box-shadow: 18px 18px 36px -12px rgb(66 68 90);
+        border-radius: 24px;
     }
     p {
-        font-family: "Lobster", cursive;
+        font-family: 'Merriweather', serif;
         font-size: 24px; 
     }
 }
@@ -23,7 +24,6 @@ section.homePage {
 @media (max-width: 600px) {
     section.homePage {
         img {
-            border: 3px dashed #ffc720;
             width: 60vw;
         }
     }
