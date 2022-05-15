@@ -145,6 +145,7 @@ nav .btn-primary:hover:after {
     border-radius: 0;
     height: 30vh;
     margin-top: -16px;
+    box-shadow: none;
     &::before {
         content: '';
         position: absolute;
