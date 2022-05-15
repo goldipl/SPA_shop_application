@@ -24,12 +24,14 @@ export function Homepage() {
     function RoomsButton() {
         const roomsButton = document.createElement('button');
         roomsButton.setAttribute('type', 'button');
-        roomsButton.innerText = '🡺 Rooms 🡸';
+        roomsButton.innerText = 'Rooms';
+        roomsButton.innerHTML = `<img src="https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg" width="auto" height="150">`;
         roomsButton.classList.add('btn', 'btn-primary');
         roomsButton.style.marginBottom = '1em';
         roomsButton.style.fontFamily = "Merriweather";
         roomsButton.style.fontSize = "24px";
         roomsButton.style.marginRight = "16px";
+        roomsButton.style.borderRadius = "24px";
     
         const navigateEventToRooms = new CustomEvent('navigate', {
             detail: () => Rooms()
@@ -45,11 +47,12 @@ export function Homepage() {
     function HousesButton() {
         const housesButton = document.createElement('button');
         housesButton.setAttribute('type', 'button');
-        housesButton.innerText = '🡺 Houses 🡸';
+        housesButton.innerText = 'Houses';
         housesButton.classList.add('btn', 'btn-warning');
         housesButton.style.marginBottom = '1em';
         housesButton.style.fontFamily = "Merriweather";
         housesButton.style.fontSize = "24px";
+        housesButton.style.borderRadius = "24px";
     
         const navigateEventToHouses = new CustomEvent('navigate', {
             detail: () => Houses()
