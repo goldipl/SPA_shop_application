@@ -69,11 +69,11 @@ export function Cart() {
         <form method="post" action="/" id="booking">
 <div style="display: flex;justify-content: space-evenly;">
             <div class="flex290">
-                <strong><label for="guestname" class="field-label">Please Enter Your Name</label></strong>
+                <strong><label for="guestname" class="field-label">Name</label></strong>
                 <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="Martin">                               
             </div>
             <div class="flex290">
-            <strong><label for="guestsurname" class="field-label">Please Enter Your Surame</label></strong>
+            <strong><label for="guestsurname" class="field-label">Surame</label></strong>
             <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="Kowalsky">                               
             </div>
             <div class="flex290">
