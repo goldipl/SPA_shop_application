@@ -6,7 +6,7 @@ function SignUpButton() {
     const buttonSignUp = document.createElement('button');
     buttonSignUp.setAttribute('type', 'button');
     buttonSignUp.innerText = 'Sign Up';
-    buttonSignUp.classList.add('btn', 'btn-success');
+    buttonSignUp.classList.add('btn', 'btn-primary');
     buttonSignUp.style.marginBottom = '1em';
     buttonSignUp.style.marginLeft = '1em';
 
@@ -95,7 +95,7 @@ function LogInButton() {
     const buttonLogIn = document.createElement('button');
     buttonLogIn.setAttribute('type', 'button');
     buttonLogIn.innerText = 'Log In';
-    buttonLogIn.classList.add('btn', 'btn-primary');
+    buttonLogIn.classList.add('btn', 'btn-info');
     buttonLogIn.style.marginBottom = '1em';
 
     // const navigateEvent = new CustomEvent('navigate', {
