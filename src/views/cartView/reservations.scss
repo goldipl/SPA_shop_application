@@ -13,6 +13,10 @@ button {
     border-radius: 6px;
 }
 
+.form_container input {
+    height: 40px;
+}
+
 @media (max-width: 950px) {
     div.form_container form#booking > div .flex290 {
         width: 45% !important;
