@@ -70,15 +70,15 @@ export function Cart() {
 <div style="display: flex;justify-content: space-evenly;">
             <div class="flex290">
                 <strong><label for="guestname" class="field-label">Name</label></strong>
-                <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="Martin">                               
+                <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="Marcin">                               
             </div>
             <div class="flex290">
-            <strong><label for="guestsurname" class="field-label">Surame</label></strong>
-            <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="Kowalsky">                               
+            <strong><label for="guestsurname" class="field-label">Surname</label></strong>
+            <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="Godlewski">                               
             </div>
             <div class="flex290">
                 <strong><label for="guestemail" class="field-label">Email Address</label></strong>
-                <input type="email" name="guestemail" id="guestemail" class="gui-input" required="" placeholder="mkowalsky@xyz.com">
+                <input type="email" name="guestemail" id="guestemail" class="gui-input" required="" placeholder="mgodlewskiy@xyz.com">
             </div>
             <div class="flex290">
                 <strong><label for="guestelephone" class="field-label">Mobile Number</label></strong>
