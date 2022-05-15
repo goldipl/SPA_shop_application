@@ -3,6 +3,11 @@ body {
     background-color: #FFFFFF;
     main {
     padding: 0 2em 2em 2em;
+    .btn-primary {
+        background-color: #edc2a7;
+        border-color: #edc2a7;
+        color: #000000;
+    }
         h2 {
             padding-bottom: 8px;
             text-decoration: underline;
