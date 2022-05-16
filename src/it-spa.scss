@@ -119,32 +119,6 @@ footer.footer {
     color: #000 !important;
 }
 
-nav .btn-primary {
-    display: inline-block;
-    position: relative;
-    color: #000000;
-    border-right: 1px solid #000 !important;
-    border-radius: 0 !important;
-}
-
-nav .btn-primary:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #000000;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-nav .btn-primary:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
 .btn.hero-buttons {
     transition: 0.6s;
 }

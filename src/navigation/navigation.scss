@@ -9,6 +9,9 @@ nav {
         color: #000000;
         border-right: 1px solid #000 !important;
         border-radius: 0 !important;
+        &:last-child {
+            border-right: 0 !important; 
+        }
         &:after {
             content: '';
             position: absolute;
