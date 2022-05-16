@@ -4,7 +4,7 @@
     align-items: center;
 }
 
-.calcView {
+.calculateSection .calcView {
     display: block;
     width: 240px;
     z-index: 99;
@@ -12,7 +12,7 @@
     background-color: #edc2a754;
 }
 
-.calcDisplay {
+.calculateSection .calcDisplay {
     width: 240px;
     height: 60px;
     font-size: 36px;
@@ -23,8 +23,8 @@
     pointer-events: none;
 }
 
-.btnn,
-.btnnNr {
+.calculateSection .btnn,
+.calculateSection .btnnNr {
     display: block;
     width: 60px;
     height: 60px;
@@ -33,7 +33,7 @@
     font-size: 24px;
 }
 
-.btnnEqual {
+.calculateSection .btnnEqual {
     display: block;
     width: 60px;
     height: 240px;
@@ -42,23 +42,23 @@
     font-size: 24px;
 }
 
-.calcKeysCol1,
-.calcKeysCol2,
-.calcKeysCol3,
-.calcKeysCol4 {
+.calculateSection .calcKeysCol1,
+.calculateSection .calcKeysCol2,
+.calculateSection .calcKeysCol3,
+.calculateSection .calcKeysCol4 {
     display: table-cell;
 }
 
-button {
+.calculateSection button {
     cursor: pointer;
 }
 
-button:active {
+.calculateSection button:active {
     transform: scale(1.05);
 }
 
-.btnn:hover,
-.btnnNr:hover,
-.btnnEqual:hover {
+.calculateSection .btnn:hover,
+.calculateSection .btnnNr:hover,
+.calculateSection .btnnEqual:hover {
     background-color: #edc2a7;
 }
