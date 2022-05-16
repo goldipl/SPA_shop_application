@@ -20,20 +20,23 @@ article {
     justify-content: center;
 }
 
-.treatmentContainer {
+.treatmentsSection article.treatmentContainer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-right: 8px;
-    width: 45%;
-    align-items: center;
+    width: 400px;
 }
 
-.treatmentContainer img {
+.treatmentsSection article.treatmentContainer h4, 
+.treatmentsSection article.treatmentContainer img, 
+.treatmentsSection article.treatmentContainer p, 
+.treatmentsSection article.treatmentContainer footer {
     margin: 8px auto;
 }
 
-@media (max-width: 800px) {
-    .treatmentContainer {
-        width: 90%;
+@media (max-width: 600px) {
+    .treatmentsSection article.treatmentContainer {
+        width: 90vw;
     }
 }
