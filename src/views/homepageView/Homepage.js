@@ -11,7 +11,7 @@ export function Homepage() {
 
     // ----- My own routing ----- start
     console.log('homePage subpage');
-    const endpoint = 'homepage';
+    const endpoint = 'Homepage';
 
     Router(endpoint);
     // ----- My own routing ----- end
