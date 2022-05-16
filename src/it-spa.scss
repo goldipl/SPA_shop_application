@@ -26,6 +26,15 @@ body {
                 z-index: -1;
             }
         }
+        .detailsArticle {
+            width: 600px;
+            margin: 16px auto 0;
+        }
+        @media (max-width: 700px) {
+            .detailsArticle {
+                width: 90vw;
+            }
+        }
     }
     p.text-muted {
         padding: 0 2em;
