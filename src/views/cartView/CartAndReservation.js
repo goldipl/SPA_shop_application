@@ -135,6 +135,7 @@ justify-content: space-evenly;">
 
         today = yyyy+'-'+mm+'-'+dd;
         document.getElementById("dateInputMin").setAttribute("min", today);
+        document.getElementById("dateInputMax").setAttribute("min", today);
     });
     </script>`;
 
@@ -155,6 +156,7 @@ justify-content: space-evenly;">
 
             lastDay = lastyyyy+'-'+lastmm+'-'+lastdd;
         document.getElementById("dateInputMax").setAttribute("max", lastDay);
+        document.getElementById("dateInputMin").setAttribute("max", lastDay);
     });
     </script>`;
 
