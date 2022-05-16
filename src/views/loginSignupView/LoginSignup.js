@@ -1,6 +1,7 @@
 import {Router} from "../../router/Router";
 import {showPasswordButton} from "../../common/ShowPasswordButton";
 import {hidePasswordButton} from "../../common/HidePasswordButton";
+import './login.scss';
 
 function SignUpButton() {
     const buttonSignUp = document.createElement('button');
@@ -123,11 +124,11 @@ export function LoginSignup() {
 
     section.innerHTML = `
     <h2>Log in / Sign up</h2>
-    <div style="display: flex; flex-direction: column; width: 240px;">
+    <div class="loginSection_container">
       <label for="textInput">Login</label>
-      <input id="textInput" style="margin-bottom: 8px;" placeholder="Your Login">
+      <input id="textInput" placeholder="Your Login">
       <label for="passInput">Password (min. 10 characters)</label>
-      <input id="passInput" type="password" style="margin-bottom: 8px;" placeholder="Your Password">
+      <input id="passInput" type="password" placeholder="Your Password">
     <div>
     `;
 

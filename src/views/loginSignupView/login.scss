@@ -1,0 +1,15 @@
+.loginSection {
+	margin: 16px auto;
+	text-align: center;
+}
+
+.loginSection .loginSection_container {
+    display: flex;
+    flex-direction: column;
+    margin: 16px auto;
+    width: 240px;
+}
+
+.loginSection .loginSection_container input {
+    margin-bottom: 8px;
+}
