@@ -1,5 +1,9 @@
 section.homePage {
     text-align: center;
+    button:hover div img {
+        transition: 0.6s;
+        transform: scale(1.03);
+    }
     .homepageTitle {
         text-align: center;
         font-family: 'Merriweather', serif;
