@@ -123,6 +123,8 @@ nav .btn-primary {
     display: inline-block;
     position: relative;
     color: #000000;
+    border-right: 1px solid #000 !important;
+    border-radius: 0 !important;
 }
 
 nav .btn-primary:after {
