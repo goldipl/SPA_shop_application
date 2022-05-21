@@ -74,7 +74,7 @@ export function Cart() {
                 </div>
                 <div class="flex290">
                     <strong><label for="guestsurname" class="field-label">Surname*</label></strong>
-                    <input type="text" name="guestname" id="guestname" class="gui-input" required="" placeholder="Godlewski">                               
+                    <input type="text" name="guestsurname" id="guestsurname" class="gui-input" required="" placeholder="Godlewski">                               
                 </div>
                 <div class="flex290">
                     <strong><label for="guestemail" class="field-label">Email Address*</label></strong>
@@ -129,7 +129,7 @@ export function Cart() {
                 </div>
                 <br>
                 <div class="flex290">
-                    <button type="submit" class="button btn-primary mB8px">Confirm Booking</button>
+                    <button type="button" id="submitButton" class="button btn-primary mB8px">Confirm Booking</button>
                     <button type="reset" class="button btn-info">Reset</button>
                 </div>
             </div>
@@ -179,12 +179,44 @@ export function Cart() {
     });
     </script>`;
 
+    const checkScript = 
+    `<script>
+    var check = () => {
+        var guestname = document.getElementById('guestname').value;
+        var guestsurname = document.getElementById('guestsurname').value;
+        var guestemail = document.getElementById('guestemail').value;
+        var guestelephone = document.getElementById('guestelephone').value;
+        var adults = document.getElementById('adults').value;
+        var children = document.getElementById('children').value;
+        var street = document.getElementById('street').value;
+        var streetnumber = document.getElementById('streetnumber').value;
+        var city = document.getElementById('city').value;
+        var dateInputMin = document.getElementById('dateInputMin').value;
+        var dateInputMax = document.getElementById('dateInputMax').value;
+        if (guestname !== '' && guestsurname !== '' && guestemail !== '' && guestelephone !== ''
+        && adults !== '' && children !== '' && street !== '' && streetnumber !== ''
+        && city !== '' && dateInputMin !== '' && dateInputMax !== '') {
+            alert("The booking has been sent 😊");
+        } else {
+            alert("Fill all required inputs");
+        }  
+
+    };
+
+    var submitButton = document.getElementById("submitButton");
+    submitButton.addEventListener("click", () => {
+        check();
+    });
+    </script>`
+
     section.append(personal);
 
     const scriptTripStartTextFragment = document.createRange().createContextualFragment(scriptTripStart);
     const scriptTripEndTextFragment = document.createRange().createContextualFragment(scriptTripEnd);
+    const checkScriptTextFragment = document.createRange().createContextualFragment(checkScript);
     section.append(scriptTripStartTextFragment);
     section.append(scriptTripEndTextFragment);
+    section.append(checkScriptTextFragment);
 
     return section;
 }
