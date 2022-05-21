@@ -20,6 +20,7 @@ button {
 .modal.showModal {
     display: block;
     opacity: 1;
+    background: rgba(10, 10, 10, 0.55);
 }
 
 .modal.fade .modal-dialog {
