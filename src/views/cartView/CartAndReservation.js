@@ -147,7 +147,7 @@ export function Cart() {
             </button>
         </div>
         <div class="modal-body">
-            Booking has been sent ✔️
+            <strong>Booking has been sent ✔️</strong>
         </div>
         </div>
     </div>
@@ -164,7 +164,7 @@ export function Cart() {
             </button>
         </div>
         <div class="modal-body">
-            Fill all required inputs ❗
+            <strong>Fill all required inputs ❗</strong>
         </div>
         </div>
     </div>
