@@ -82,7 +82,7 @@ export function Cart() {
                 </div>
                 <div class="flex290">
                     <strong><label for="guestelephone" class="field-label">Mobile Number*</label></strong>
-                    <input type="text" name="guestelephone" id="guestelephone" class="gui-input" required="" placeholder="Mobile Number"> 
+                    <input type="number" name="guestelephone" id="guestelephone" class="gui-input" required="" placeholder="Mobile Number"> 
                 </div>
             </div>
             <div style="display: flex; justify-content: space-evenly;">
@@ -96,7 +96,7 @@ export function Cart() {
                 </div>
                 <div class="flex290">
                     <strong><label for="street" class="field-label">Street*</label></strong>
-                    <input type="number" id="street" name="street" class="gui-input" required="" placeholder="Street">
+                    <input type="text" id="street" name="street" class="gui-input" required="" placeholder="Street">
                 </div>
                 <div class="flex290">
                     <strong><label for="streetnumber" class="field-label">Street Number*</label></strong>
@@ -110,7 +110,7 @@ export function Cart() {
                 </div>
                 <div class="flex290">
                     <strong><label for="city" class="field-label">City*</label></strong>
-                    <input type="number" id="city" name="city" class="gui-input" required="" placeholder="City"">
+                    <input type="text" id="city" name="city" class="gui-input" required="" placeholder="City"">
                 </div>
                 <div class="flex290">
                     <strong><label for="checkin" class="field-label">Check-in Date*</label></strong>
