@@ -135,6 +135,40 @@ export function Cart() {
             </div>
         </form>
     </div>
+
+    <!-- Sent Modal -->
+    <div class="modal fade" id="sentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Booking information</h5>
+            <button type="button" class="closeModal" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            Booking has been sent ✔️
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- FillInputs Modal -->
+    <div class="modal fade" id="fillInputsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Booking information</h5>
+            <button type="button" class="closeFillInputsModal" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            Fill all required inputs ❗
+        </div>
+        </div>
+    </div>
+    </div>
     `;
 
     const scriptTripStart =
@@ -181,6 +215,8 @@ export function Cart() {
 
     const checkScript = 
     `<script>
+
+    var sentModal = document.getElementById("sentModal");
     var check = () => {
         var guestname = document.getElementById('guestname').value;
         var guestsurname = document.getElementById('guestsurname').value;
@@ -196,9 +232,9 @@ export function Cart() {
         if (guestname !== '' && guestsurname !== '' && guestemail !== '' && guestelephone !== ''
         && adults !== '' && children !== '' && street !== '' && streetnumber !== ''
         && city !== '' && dateInputMin !== '' && dateInputMax !== '') {
-            alert("The booking has been sent 😊");
+            sentModal.classList.add("showModal");
         } else {
-            alert("Fill all required inputs");
+            fillInputsModal.classList.add("showModal");
         }  
 
     };
@@ -206,6 +242,16 @@ export function Cart() {
     var submitButton = document.getElementById("submitButton");
     submitButton.addEventListener("click", () => {
         check();
+    });
+
+    var closeModalButton = document.querySelector("button.closeModal");
+    closeModalButton.addEventListener("click", () => {
+        sentModal.classList.remove("showModal");
+    });
+
+    var closeFillInputsModal = document.querySelector("button.closeFillInputsModal");
+    closeFillInputsModal.addEventListener("click", () => {
+        fillInputsModal.classList.remove("showModal");
     });
     </script>`
 

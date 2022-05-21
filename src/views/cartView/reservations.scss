@@ -17,6 +17,15 @@ button {
     height: 40px;
 }
 
+.modal.showModal {
+    display: block;
+    opacity: 1;
+}
+
+.modal.fade .modal-dialog {
+    transform: translate(0, calc(46vh - 120px)) !important;
+}
+
 @media (max-width: 950px) {
     div.form_container form#booking > div .flex290 {
         width: 45% !important;
