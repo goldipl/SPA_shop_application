@@ -130,7 +130,7 @@ export function Cart() {
                 <br>
                 <div class="flex290">
                     <button type="button" id="submitButton" class="button btn-primary mB8px">Confirm Booking</button>
-                    <button type="reset" class="button btn-info">Reset</button>
+                    <button type="reset" class="button btn-info">Reset All Inputs</button>
                 </div>
             </div>
         </form>
