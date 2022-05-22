@@ -147,6 +147,21 @@ footer.footer {
     box-shadow: 18px 18px 36px -12px #edc2a7;
 }
 
+.closeAddtoCartModalButton,
+.closeFillInputsModal,
+.closeModal {
+    font-size: 24px;
+    padding: 0 12px;
+    border-color: #edc2a7;
+	transition: 0.6s;
+}
+
+.closeAddtoCartModalButton:hover,
+.closeFillInputsModal:hover,
+.closeModal:hover {
+    background-color: #edc2a7;
+}
+
 @media (max-width: 600px) {
     .btn.hero-buttons {
         margin-right: 0;
