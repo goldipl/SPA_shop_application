@@ -183,4 +183,7 @@ footer.footer {
     nav .btn-primary.hamburgerOn {
         display: inline-block !important;
     }
+    nav .btn-primary:last-child {
+        display: none !important;
+    }
 }
