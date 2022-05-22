@@ -141,14 +141,13 @@ export function Cart() {
     <div class="modal-dialog" role="document">
         <div class="modal-content">
         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Booking information</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Booking has been sent ✔️</h5>
             <button type="button" class="closeModal" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
             </button>
         </div>
         <div class="modal-body">
-            <strong>Booking has been sent ✔️</strong>
-            <strong>Total cost: ${calculateTotal(cartItems)} USD</strong>
+            <p>Total cost:<strong> ${calculateTotal(cartItems)} USD</strong></p>
             <a href="https://www.santander.pl/" type="button" class="button btn-info pay-btn">Pay</a>
         </div>
         </div>
