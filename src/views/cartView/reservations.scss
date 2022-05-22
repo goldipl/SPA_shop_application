@@ -27,6 +27,10 @@ button {
     transform: translate(0, calc(46vh - 120px)) !important;
 }
 
+.modal-header {
+    border-bottom: 0 !important;
+}
+
 @media (max-width: 950px) {
     div.form_container form#booking > div .flex290 {
         width: 45% !important;
