@@ -93,6 +93,11 @@ footer.footer {
     }
 }
 
+.btn-info:disabled {
+    border-color: #ababab !important; 
+    color: #ababab !important;
+}
+
 .btn-primary {
     background-color: #edc2a7 !important;
     border-color: #edc2a7 !important;
