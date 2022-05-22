@@ -148,6 +148,8 @@ export function Cart() {
         </div>
         <div class="modal-body">
             <strong>Booking has been sent ✔️</strong>
+            <strong>Total cost: ${calculateTotal(cartItems)} USD</strong>
+            <a href="https://www.santander.pl/" type="button" class="button btn-info pay-btn">Pay</a>
         </div>
         </div>
     </div>
