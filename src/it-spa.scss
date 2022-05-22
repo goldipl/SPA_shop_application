@@ -169,4 +169,17 @@ footer.footer {
     .homePage .bigImage {
         height: 20vh;
     }
+    #hamburger {
+        display: block;
+        position: absolute;
+        top: 24px;
+        right: 16px;
+        font-size: 40px;
+    }
+    nav .btn-primary {
+        display: none !important;
+    }
+    nav .btn-primary.hamburgerOn {
+        display: inline-block !important;
+    }
 }
