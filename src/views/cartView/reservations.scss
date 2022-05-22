@@ -31,6 +31,21 @@ button {
     border-bottom: 0 !important;
 }
 
+#sentModal .modal-body strong {
+	display: block;
+	margin-bottom: 8px;
+}
+
+#sentModal .modal-body .pay-btn {
+    border: 1px solid;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    width: 64px;
+    justify-content: center;
+}
+
 @media (max-width: 950px) {
     div.form_container form#booking > div .flex290 {
         width: 45% !important;
