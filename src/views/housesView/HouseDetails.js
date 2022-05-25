@@ -8,7 +8,7 @@ export function HouseDetails(id) {
         <p id="loading">Loading...</p>
     `;
     // Local version
-    // fetch(`http://localhost:3000/houses/${id}`)
+    //fetch(`http://localhost:3000/houses/${id}`)
     // Live - Github Version
     fetch(`https://my-json-server.typicode.com/goldipl/SPA_shop_application/houses/${id}`)
         .then(response => response.json())
@@ -16,6 +16,7 @@ export function HouseDetails(id) {
             const { name, beds, guests, price, description, img, rooms, bathrooms } = house;
 
             const article = document.createElement('article');
+            article.classList.add("detailsArticle");
 
             article.innerHTML = `
                 <h2 style="text-decoration: none !important">${name} ${price < 750 ? '⭐⭐⭐⭐' : '⭐⭐⭐⭐⭐'}</h2>
