@@ -58,6 +58,10 @@ In the project directory, you can run following scripts:
 * `npm run build` - builds the app for production   
 * `npm run start:app` - runs the app in the development mode. Open http://localhost:1234 to view it in your browser. The page will reload when you make changes.
 
+### Architecture
+
+![Architecture](./screenshots/Architecture.png) 
+
 ### Used Technologies
 
 * HTML
