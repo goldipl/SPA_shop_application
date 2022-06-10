@@ -162,6 +162,12 @@ footer.footer {
     background-color: #edc2a7;
 }
 
+@media (min-width: 601px) {
+    div#hamburger {
+        display: none;
+    }
+}
+
 @media (max-width: 600px) {
     .btn.hero-buttons {
         margin-right: 0;
