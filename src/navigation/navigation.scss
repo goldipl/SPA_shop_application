@@ -47,3 +47,41 @@ nav {
     border-color: #000000;
     color: #000000;
 }
+
+@media (min-width: 601px) {
+    div#hamburger {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    #hamburger {
+        cursor: pointer;
+        display: block;
+        font-size: 40px;
+        position: absolute;
+        right: 16px;
+        top: 8px;
+    }
+    nav .btn-primary {
+        display: none !important;
+    }
+    nav .btn-primary.hamburgerOn {
+        display: inline-block !important;
+    }
+    nav .btn-primary:last-child {
+        display: none !important;
+    }
+    .logoSPAText {
+        text-align: left !important;
+        margin-left: 8px!important;
+        font-size: 30px;
+    }
+    .logoSPAText span.text {
+        top: 44px;
+        left: 4px;
+    }
+    nav {
+        padding: 8px;
+    }
+}

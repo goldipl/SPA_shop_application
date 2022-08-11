@@ -162,12 +162,6 @@ footer.footer {
     background-color: #edc2a7;
 }
 
-@media (min-width: 601px) {
-    div#hamburger {
-        display: none;
-    }
-}
-
 @media (max-width: 600px) {
     .btn.hero-buttons {
         margin-right: 0 !important;
@@ -175,40 +169,11 @@ footer.footer {
     .homePage .bigImage {
         height: 20vh;
     }
-    #hamburger {
-        cursor: pointer;
-        display: block;
-        font-size: 40px;
-        position: absolute;
-        right: 16px;
-        top: 8px;
-    }
-    nav .btn-primary {
-        display: none !important;
-    }
-    nav .btn-primary.hamburgerOn {
-        display: inline-block !important;
-    }
-    nav .btn-primary:last-child {
-        display: none !important;
-    }
-    .logoSPAText {
-        text-align: left !important;
-        margin-left: 8px!important;
-        font-size: 30px;
-    }
-    .logoSPAText span.text {
-        top: 44px;
-        left: 4px;
-    }
     section.homePage .homepageTitle {
         font-size: 24px;
     }
     section.homePage p,
     section.homePage button {
     font-size: 16px;
-    }
-    nav {
-        padding: 8px;
     }
 }
