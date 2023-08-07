@@ -2,6 +2,8 @@
 
 The project is a SPA Center dedicated to programmers written as a Single Page Application using Vanilla Javascript and Node.JS as a primary technologies (styled with SCSS/CSS3).
 
+![gif](./gif/it_spa_center.gif)
+
 ### Using this application you can:
 
 - Check the available treatments
